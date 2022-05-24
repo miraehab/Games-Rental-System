@@ -136,9 +136,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Snow;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(353, 347);
+            this.button1.Location = new System.Drawing.Point(355, 342);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 40);
+            this.button1.Size = new System.Drawing.Size(156, 42);
             this.button1.TabIndex = 10;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;

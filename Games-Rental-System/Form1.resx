@@ -60,14 +60,19 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAALwAAAAyCAYAAADm87EDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
-        IgAALiIBquLdkgAAAV9JREFUeF7t3U1tw0AUhdEgqLrrthAKoVKJBEIgBEqgBEIhFEIZuPMcJ5WdIeC5
-        Z3Gk/Iy9+jQazeYdpmnqenv5+mwuzU8zwQ5cm1Pz2mu6PP3QFn8sD/ZeCHvw25y3bZfVl7bouCzuvQT2
-        pjbu1W6/jb33EOzZd/OI/h57HWPs7Izqsg3emZ3Rfc7B14fNHzCi6z34unrsLYDRvFfw7tlJcazge3/A
-        iM6CJ4ngiSJ4ogieKIIniuCJIniiCJ4ogieK4IkieKIIniiCJ4rgiSJ4ogieKIIniuCJIniiCJ4ogieK
-        4IkieKIIniiCJ4rgiSJ4ogieKIIniuCJIniizMEbiECKeSCCkTekmEfeGGpGgttQM2MrCXEbW7kEbzAx
-        I1sPJl6iN3qeET2Pnt9Eb6dnFHVUf8ReVsGXtqCON8707Flt2udt2+Xph7v2QN3e1JWle3r2ojbqU7Pa
-        1f9Nhz/rZMu6WQF0ZgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJkAAAAnCAYAAAAcnOq/AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
+        IgAALiIBquLdkgAAAnVJREFUeF7t3DuIE0EYB/CZzb53dpPb7G44z/MFGsW3Ri/GeLkHWCgWCmJnJwgW
+        oo0IFvYWItpaWVqIra1ooY2ICIogPhq1UEQFOS66k6xC7r6785Kdyv8HvybfzFR/ZncDM4wqXXOrvl29
+        EfvN95VgcrYSTP8CWEA78sc/FZ3Nt4xCUMsitHhZevlQKOrPiMUAFlX2Gm9sY/gkY1zL4jS/LD060t29
+        6EUAlpKI8S+OOXIqi1Rv6QV/RyTqL6mJAMsR+Qc+mnp4MItWtzgvuEVn621qAkA/Qq/2QONmkkUsfUwa
+        ybE4mPxBDQboU9s1R892AiZ3sZK7/S4xCGAgQ27tkcatYWYUivsiv/mBGgQwiFi0vttG5QTzrDUX8V8Y
+        qBI4m26ykrvtDtUEyEPZG3vCymLvU6oJkIdEtD4z+S8t1QTISTvdyRpviQZAbhAyUA4hA+UQMlAOIQPl
+        EDJQDiED5RAyUA4hA+UQMlAOIQPlEDJQDiED5RAyUI5FovmOagDkJQ1Z/QXVAMiDPAXHhpyd96gmQB7k
+        gXHm2+uvUE2APMgzJPL+i8OJmPhKDQAYzNSMa648wzRuxqG3+yE9CKB/kdd4pWvexs4pctdcdS79sT13
+        EMAgfHvD1b/XSGncWhG6ex5TAwH6Ufb2v9Y1saUTsD9l6fFReUaOmgCwHHEw8bPzLja/uOZZqy/IAdRE
+        gH/UTh+T1zjT7CxYvSUbnrX2Er42oR9yg/Kt6nXO9VIWqYWK67aRHO++o03NUIsB9JqcDcXYc8ccOZ1u
+        VE4WpKWroNmj6Vfn+dDbdV/eA0ovDv+zWLS+yc1IWOsuyxvTs+jMKcZ+A6XdFi2yEDWFAAAAAElFTkSu
+        QmCC
 </value>
   </data>
 </root>
