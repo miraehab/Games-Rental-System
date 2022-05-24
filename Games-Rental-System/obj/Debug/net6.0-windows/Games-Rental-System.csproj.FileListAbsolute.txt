@@ -13,3 +13,21 @@ E:\Projects\C#\New folder\Games-Rental-System\Games-Rental-System\obj\Debug\net6
 E:\Projects\C#\New folder\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\ref\Games-Rental-System.dll
 E:\Projects\C#\New folder\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.pdb
 E:\Projects\C#\New folder\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.genruntimeconfig.cache
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\Games-Rental-System.exe
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\Games-Rental-System.deps.json
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\Games-Rental-System.runtimeconfig.json
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\Games-Rental-System.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\ref\Games-Rental-System.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\Games-Rental-System.pdb
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.csproj.AssemblyReference.cache
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games_Rental_System.Form1.resources
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games_Rental_System.Properties.Resources.resources
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.csproj.GenerateResource.cache
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.AssemblyInfoInputs.cache
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.AssemblyInfo.cs
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.csproj.CoreCompileInputs.cache
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\ref\Games-Rental-System.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.pdb
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games-Rental-System.genruntimeconfig.cache

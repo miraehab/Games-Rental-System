@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\C#\\New folder\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
+      "projectUniqueName": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
       "projectName": "Games-Rental-System",
-      "projectPath": "E:\\Projects\\C#\\New folder\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
+      "projectPath": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
       "packagesPath": "C:\\Users\\misho\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\C#\\New folder\\Games-Rental-System\\Games-Rental-System\\obj\\",
+      "outputPath": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
