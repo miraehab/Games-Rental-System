@@ -25,7 +25,8 @@ namespace Games_Rental_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Main().Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

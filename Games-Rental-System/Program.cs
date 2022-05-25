@@ -9,7 +9,8 @@ namespace Games_Rental_System
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form3());
+            Application.EnableVisualStyles();
+            Application.Run(new Login());
         }
     }
 }

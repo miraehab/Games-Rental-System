@@ -1,8 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "+DL0mjfXzYQhBmMLueRkVLn43mfFUx0zksoVzEy8yBSUQE1kfgPfO9t+PT8HE3jfUp0EizVUIQX1LfDoMzziZg==",
+  "dgSpecHash": "Z6jIIqSKgZ0kQEfxl6OJ5i//LBaUwllqHmtcFuuMyeBCdNj/Nc17kyGnin0VHvknWaB5OvD3Bbdqt16tILc/2g==",
   "success": true,
   "projectFilePath": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\misho\\.nuget\\packages\\circularprogressbar\\2.8.0.16\\circularprogressbar.2.8.0.16.nupkg.sha512",
+    "C:\\Users\\misho\\.nuget\\packages\\winformanimation\\1.6.0.4\\winformanimation.1.6.0.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CircularProgressBar 2.8.0.16' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CircularProgressBar",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WinFormAnimation 1.6.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WinFormAnimation",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
