@@ -5,6 +5,11 @@
       "ProjectGuid": "a3a6e1dd-b171-4701-a64c-83b96c415091",
       "DisplayName": "Games-Rental-System",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1
