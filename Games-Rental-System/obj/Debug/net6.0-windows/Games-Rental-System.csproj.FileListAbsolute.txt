@@ -42,3 +42,9 @@ E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\
 E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games_Rental_System.frmAddGame.resources
 E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games_Rental_System.frmAddUser.resources
 E:\Projects\C#\Games-Rental-System\Games-Rental-System\obj\Debug\net6.0-windows\Games_Rental_System.frmUpdateGame.resources
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projects\C#\Games-Rental-System\Games-Rental-System\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

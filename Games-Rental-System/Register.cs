@@ -17,14 +17,9 @@ namespace Games_Rental_System
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            //SqlCommand command = new SqlCommand("insert into ADMIN VALUES ('" + inpUserName.Text.ToString() + "','" + inpPassword.Text.ToString() + "')", con);
         }
     }
 }

@@ -29,48 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
-            this.RegisterButton = new System.Windows.Forms.Button();
-            this.Password = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.inpPassword = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.UserName = new System.Windows.Forms.TextBox();
+            this.inpUserName = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgCover = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.PasswordConfirm = new System.Windows.Forms.TextBox();
+            this.inpPasswordConfirm = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // RegisterButton
+            // btnRegister
             // 
-            this.RegisterButton.BackColor = System.Drawing.Color.Transparent;
-            this.RegisterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RegisterButton.ForeColor = System.Drawing.Color.Snow;
-            this.RegisterButton.Image = ((System.Drawing.Image)(resources.GetObject("RegisterButton.Image")));
-            this.RegisterButton.Location = new System.Drawing.Point(401, 427);
-            this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(156, 42);
-            this.RegisterButton.TabIndex = 19;
-            this.RegisterButton.Text = "Register";
-            this.RegisterButton.UseVisualStyleBackColor = false;
-            this.RegisterButton.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegister.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.ForeColor = System.Drawing.Color.Snow;
+            this.btnRegister.Image = ((System.Drawing.Image)(resources.GetObject("btnRegister.Image")));
+            this.btnRegister.Location = new System.Drawing.Point(401, 427);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(156, 42);
+            this.btnRegister.TabIndex = 19;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // Password
+            // inpPassword
             // 
-            this.Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
-            this.Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Password.Location = new System.Drawing.Point(413, 252);
-            this.Password.Multiline = true;
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(270, 25);
-            this.Password.TabIndex = 18;
+            this.inpPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.inpPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpPassword.Location = new System.Drawing.Point(413, 252);
+            this.inpPassword.Multiline = true;
+            this.inpPassword.Name = "inpPassword";
+            this.inpPassword.Size = new System.Drawing.Size(270, 25);
+            this.inpPassword.TabIndex = 18;
             // 
             // pictureBox3
             // 
@@ -93,15 +93,15 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Password";
             // 
-            // UserName
+            // inpUserName
             // 
-            this.UserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
-            this.UserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserName.Location = new System.Drawing.Point(413, 148);
-            this.UserName.Multiline = true;
-            this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(270, 25);
-            this.UserName.TabIndex = 15;
+            this.inpUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.inpUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpUserName.Location = new System.Drawing.Point(413, 148);
+            this.inpUserName.Multiline = true;
+            this.inpUserName.Name = "inpUserName";
+            this.inpUserName.Size = new System.Drawing.Size(270, 25);
+            this.inpUserName.TabIndex = 15;
             // 
             // pictureBox2
             // 
@@ -135,17 +135,16 @@
             this.label1.Size = new System.Drawing.Size(166, 42);
             this.label1.TabIndex = 12;
             this.label1.Text = "Register";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
+            // imgCover
             // 
-            this.pictureBox1.Image = global::Games_Rental_System.Properties.Resources.Untitled_3;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(358, 561);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.imgCover.Image = global::Games_Rental_System.Properties.Resources.Untitled_3;
+            this.imgCover.Location = new System.Drawing.Point(0, 0);
+            this.imgCover.Name = "imgCover";
+            this.imgCover.Size = new System.Drawing.Size(358, 561);
+            this.imgCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCover.TabIndex = 11;
+            this.imgCover.TabStop = false;
             // 
             // label4
             // 
@@ -168,39 +167,39 @@
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
             // 
-            // PasswordConfirm
+            // inpPasswordConfirm
             // 
-            this.PasswordConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
-            this.PasswordConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PasswordConfirm.Location = new System.Drawing.Point(413, 351);
-            this.PasswordConfirm.Multiline = true;
-            this.PasswordConfirm.Name = "PasswordConfirm";
-            this.PasswordConfirm.Size = new System.Drawing.Size(270, 25);
-            this.PasswordConfirm.TabIndex = 22;
+            this.inpPasswordConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.inpPasswordConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpPasswordConfirm.Location = new System.Drawing.Point(413, 351);
+            this.inpPasswordConfirm.Multiline = true;
+            this.inpPasswordConfirm.Name = "inpPasswordConfirm";
+            this.inpPasswordConfirm.Size = new System.Drawing.Size(270, 25);
+            this.inpPasswordConfirm.TabIndex = 22;
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 561);
-            this.Controls.Add(this.PasswordConfirm);
+            this.Controls.Add(this.inpPasswordConfirm);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.RegisterButton);
-            this.Controls.Add(this.Password);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.inpPassword);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.UserName);
+            this.Controls.Add(this.inpUserName);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgCover);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -209,17 +208,17 @@
 
         #endregion
 
-        private Button RegisterButton;
-        private TextBox Password;
+        private Button btnRegister;
+        private TextBox inpPassword;
         private PictureBox pictureBox3;
         private Label label3;
-        private TextBox UserName;
+        private TextBox inpUserName;
         private PictureBox pictureBox2;
         private Label label2;
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox imgCover;
         private Label label4;
         private PictureBox pictureBox4;
-        private TextBox PasswordConfirm;
+        private TextBox inpPasswordConfirm;
     }
 }
