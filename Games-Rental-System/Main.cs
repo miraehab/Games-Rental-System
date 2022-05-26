@@ -50,89 +50,97 @@ namespace Games_Rental_System
 
         }
 
-        private void btnAnalytics_Click(object sender, EventArgs e)
+        private void btnAddGame_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAnalytics.Height;
-            pnlNav.Top = btnAnalytics.Top;
-            btnAnalytics.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnAddGame.Height;
+            pnlNav.Top = btnAddGame.Top;
+            btnAddGame.BackColor = Color.FromArgb(46, 51, 73);
 
-            lbltitle.Text = "Add";
+            lbltitle.Text = "Add Game";
             this.pnlFormLoader.Controls.Clear();
-            frmAnalytics frmAnalytics_vrb = new frmAnalytics() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmAnalytics_vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(frmAnalytics_vrb);
-            frmAnalytics_vrb.Show();
+            frmAddGame frmAddGame_vrb = new frmAddGame() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmAddGame_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmAddGame_vrb);
+            frmAddGame_vrb.Show();
             textBox1.Hide();
         }
 
-        private void btnCalender_Click(object sender, EventArgs e)
+        private void btnUpdateGame_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnCalender.Height;
-            pnlNav.Top = btnCalender.Top;
-            btnCalender.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnUpdateGame.Height;
+            pnlNav.Top = btnUpdateGame.Top;
+            btnUpdateGame.BackColor = Color.FromArgb(46, 51, 73);
 
             this.pnlFormLoader.Controls.Clear();
-            frmCalender frmCalender_vrb = new frmCalender() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmUpdateGame frmCalender_vrb = new frmUpdateGame() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmCalender_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmCalender_vrb);
             frmCalender_vrb.Show();
             textBox1.Hide();
-            lbltitle.Text = "Update";
+            lbltitle.Text = "Update Game";
         }
 
-        private void btnContactUs_Click(object sender, EventArgs e)
+        private void btnAddUser_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnContactUs.Height;
-            pnlNav.Top = btnContactUs.Top;
-            btnContactUs.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnAddUser.Height;
+            pnlNav.Top = btnAddUser.Top;
+            btnAddUser.BackColor = Color.FromArgb(46, 51, 73);
 
             this.pnlFormLoader.Controls.Clear();
-            frmContactUs frmContactUs_vrb = new frmContactUs() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmAddUser frmContactUs_vrb = new frmAddUser() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmContactUs_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmContactUs_vrb);
             frmContactUs_vrb.Show();
             textBox1.Hide();
-            lbltitle.Text = "Contact Us";
+            lbltitle.Text = "Add User";
         }
-
-        private void btnsettings_Click(object sender, EventArgs e)
+        private void btnUpdateUser_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnsettings.Height;
-            pnlNav.Top = btnsettings.Top;
-            btnsettings.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnUpdateUser.Height;
+            pnlNav.Top = btnUpdateUser.Top;
+            btnUpdateUser.BackColor = Color.FromArgb(46, 51, 73);
 
             this.pnlFormLoader.Controls.Clear();
-            frmSettings frmSettings_vrb = new frmSettings() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmSettings_vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(frmSettings_vrb);
-            frmSettings_vrb.Show();
+            frmUpdateUser frmUpdateUser_vrb = new frmUpdateUser() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmUpdateUser_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmUpdateUser_vrb);
+            frmUpdateUser_vrb.Show();
             textBox1.Hide();
-            lbltitle.Text = "Settings";
+            lbltitle.Text = "Update User";
         }
 
-        private void btnDashbord_Leave(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
+        {        
+            new Register().Show();
+        }
+
+        private void btnBrowse_Leave(object sender, EventArgs e)
         {
             btnBrowse.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void btnAnalytics_Leave(object sender, EventArgs e)
+        private void btnAddGame_Leave(object sender, EventArgs e)
         {
-            btnAnalytics.BackColor = Color.FromArgb(24, 17, 68);
+            btnAddGame.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void btnCalender_Leave(object sender, EventArgs e)
+        private void btnUpdateGame_Leave(object sender, EventArgs e)
         {
-            btnCalender.BackColor = Color.FromArgb(24, 17, 68);
+            btnUpdateGame.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void btnContactUs_Leave(object sender, EventArgs e)
+        private void btnAddUser_Leave(object sender, EventArgs e)
         {
-            btnContactUs.BackColor = Color.FromArgb(24, 17, 68);
+            btnAddUser.BackColor = Color.FromArgb(24, 17, 68);
+        }
+        private void btnUpdateUser_Leave(object sender, EventArgs e)
+        {
+            btnUpdateUser.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void btnsettings_Leave(object sender, EventArgs e)
+        private void btnRegister_Leave(object sender, EventArgs e)
         {
-            btnsettings.BackColor = Color.FromArgb(24, 17, 68);
+            btnRegister.BackColor = Color.FromArgb(24, 17, 68);
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -164,5 +172,6 @@ namespace Games_Rental_System
         {
 
         }
+
     }
 }

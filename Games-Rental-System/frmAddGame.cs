@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Games_Rental_System
 {
-    public partial class frmCalender : Form
+    public partial class frmAddGame : Form
     {
-        public frmCalender()
+        public frmAddGame()
         {
             InitializeComponent();
+        }
+
+        private void circularProgressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

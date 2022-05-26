@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Games_Rental_System
 {
-    public partial class frmSettings : Form
+    public partial class frmUpdateUser : Form
     {
-        public frmSettings()
+        public frmUpdateUser()
         {
             InitializeComponent();
         }

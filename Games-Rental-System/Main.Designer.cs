@@ -30,10 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
-            this.btnsettings = new System.Windows.Forms.Button();
-            this.btnContactUs = new System.Windows.Forms.Button();
-            this.btnCalender = new System.Windows.Forms.Button();
-            this.btnAnalytics = new System.Windows.Forms.Button();
+            this.btnUpdateUser = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnAddUser = new System.Windows.Forms.Button();
+            this.btnUpdateGame = new System.Windows.Forms.Button();
+            this.btnAddGame = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,10 +50,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(17)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.pnlNav);
-            this.panel1.Controls.Add(this.btnsettings);
-            this.panel1.Controls.Add(this.btnContactUs);
-            this.panel1.Controls.Add(this.btnCalender);
-            this.panel1.Controls.Add(this.btnAnalytics);
+            this.panel1.Controls.Add(this.btnUpdateUser);
+            this.panel1.Controls.Add(this.btnRegister);
+            this.panel1.Controls.Add(this.btnAddUser);
+            this.panel1.Controls.Add(this.btnUpdateGame);
+            this.panel1.Controls.Add(this.btnAddGame);
             this.panel1.Controls.Add(this.btnBrowse);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -65,87 +67,106 @@
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.pnlNav.Location = new System.Drawing.Point(0, 223);
+            this.pnlNav.Location = new System.Drawing.Point(0, 247);
             this.pnlNav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(4, 115);
+            this.pnlNav.Size = new System.Drawing.Size(10, 96);
             this.pnlNav.TabIndex = 2;
             // 
-            // btnsettings
+            // btnUpdateUser
             // 
-            this.btnsettings.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnsettings.FlatAppearance.BorderSize = 0;
-            this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnsettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnsettings.Image = global::Games_Rental_System.Properties.Resources.settings;
-            this.btnsettings.Location = new System.Drawing.Point(0, 589);
-            this.btnsettings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnsettings.Name = "btnsettings";
-            this.btnsettings.Size = new System.Drawing.Size(217, 48);
-            this.btnsettings.TabIndex = 1;
-            this.btnsettings.Text = "Settings";
-            this.btnsettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnsettings.UseVisualStyleBackColor = true;
-            this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
-            this.btnsettings.Leave += new System.EventHandler(this.btnsettings_Leave);
+            this.btnUpdateUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
+            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateUser.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnUpdateUser.Image = global::Games_Rental_System.Properties.Resources.Conact;
+            this.btnUpdateUser.Location = new System.Drawing.Point(0, 377);
+            this.btnUpdateUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Size = new System.Drawing.Size(217, 48);
+            this.btnUpdateUser.TabIndex = 3;
+            this.btnUpdateUser.Text = "Update User";
+            this.btnUpdateUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
+            this.btnUpdateUser.Leave += new System.EventHandler(this.btnUpdateUser_Leave);
             // 
-            // btnContactUs
+            // btnRegister
             // 
-            this.btnContactUs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactUs.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnContactUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnContactUs.Image = global::Games_Rental_System.Properties.Resources.Conact;
-            this.btnContactUs.Location = new System.Drawing.Point(0, 329);
-            this.btnContactUs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(217, 48);
-            this.btnContactUs.TabIndex = 1;
-            this.btnContactUs.Text = "Contact Us";
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnContactUs.UseVisualStyleBackColor = true;
-            this.btnContactUs.Click += new System.EventHandler(this.btnContactUs_Click);
-            this.btnContactUs.Leave += new System.EventHandler(this.btnContactUs_Leave);
+            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRegister.FlatAppearance.BorderSize = 0;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnRegister.Image = global::Games_Rental_System.Properties.Resources.settings;
+            this.btnRegister.Location = new System.Drawing.Point(0, 589);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(217, 48);
+            this.btnRegister.TabIndex = 1;
+            this.btnRegister.Text = "Register Admin";
+            this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnRegister.Leave += new System.EventHandler(this.btnRegister_Leave);
             // 
-            // btnCalender
+            // btnAddUser
             // 
-            this.btnCalender.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCalender.FlatAppearance.BorderSize = 0;
-            this.btnCalender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalender.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCalender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnCalender.Image = global::Games_Rental_System.Properties.Resources.calendar;
-            this.btnCalender.Location = new System.Drawing.Point(0, 281);
-            this.btnCalender.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnCalender.Name = "btnCalender";
-            this.btnCalender.Size = new System.Drawing.Size(217, 48);
-            this.btnCalender.TabIndex = 1;
-            this.btnCalender.Text = "Update";
-            this.btnCalender.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCalender.UseVisualStyleBackColor = true;
-            this.btnCalender.Click += new System.EventHandler(this.btnCalender_Click);
-            this.btnCalender.Leave += new System.EventHandler(this.btnCalender_Leave);
+            this.btnAddUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddUser.FlatAppearance.BorderSize = 0;
+            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUser.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnAddUser.Image = global::Games_Rental_System.Properties.Resources.Conact;
+            this.btnAddUser.Location = new System.Drawing.Point(0, 329);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Size = new System.Drawing.Size(217, 48);
+            this.btnAddUser.TabIndex = 1;
+            this.btnAddUser.Text = "Add User";
+            this.btnAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            this.btnAddUser.Leave += new System.EventHandler(this.btnAddUser_Leave);
             // 
-            // btnAnalytics
+            // btnUpdateGame
             // 
-            this.btnAnalytics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnalytics.FlatAppearance.BorderSize = 0;
-            this.btnAnalytics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalytics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAnalytics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnAnalytics.Image = global::Games_Rental_System.Properties.Resources.diagram;
-            this.btnAnalytics.Location = new System.Drawing.Point(0, 233);
-            this.btnAnalytics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(217, 48);
-            this.btnAnalytics.TabIndex = 1;
-            this.btnAnalytics.Text = "Add";
-            this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAnalytics.UseVisualStyleBackColor = true;
-            this.btnAnalytics.Click += new System.EventHandler(this.btnAnalytics_Click);
-            this.btnAnalytics.Leave += new System.EventHandler(this.btnAnalytics_Leave);
+            this.btnUpdateGame.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUpdateGame.FlatAppearance.BorderSize = 0;
+            this.btnUpdateGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateGame.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnUpdateGame.Image = global::Games_Rental_System.Properties.Resources.calendar;
+            this.btnUpdateGame.Location = new System.Drawing.Point(0, 281);
+            this.btnUpdateGame.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnUpdateGame.Name = "btnUpdateGame";
+            this.btnUpdateGame.Size = new System.Drawing.Size(217, 48);
+            this.btnUpdateGame.TabIndex = 1;
+            this.btnUpdateGame.Text = "Update Game";
+            this.btnUpdateGame.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnUpdateGame.UseVisualStyleBackColor = true;
+            this.btnUpdateGame.Click += new System.EventHandler(this.btnUpdateGame_Click);
+            this.btnUpdateGame.Leave += new System.EventHandler(this.btnUpdateGame_Leave);
+            // 
+            // btnAddGame
+            // 
+            this.btnAddGame.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddGame.FlatAppearance.BorderSize = 0;
+            this.btnAddGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddGame.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnAddGame.Image = global::Games_Rental_System.Properties.Resources.diagram;
+            this.btnAddGame.Location = new System.Drawing.Point(0, 233);
+            this.btnAddGame.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnAddGame.Name = "btnAddGame";
+            this.btnAddGame.Size = new System.Drawing.Size(217, 48);
+            this.btnAddGame.TabIndex = 1;
+            this.btnAddGame.Text = "Add Game";
+            this.btnAddGame.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAddGame.UseVisualStyleBackColor = true;
+            this.btnAddGame.Click += new System.EventHandler(this.btnAddGame_Click);
+            this.btnAddGame.Leave += new System.EventHandler(this.btnAddGame_Leave);
             // 
             // btnBrowse
             // 
@@ -160,11 +181,11 @@
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(217, 48);
             this.btnBrowse.TabIndex = 1;
-            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Text = "Browse Game";
             this.btnBrowse.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
-            this.btnBrowse.Leave += new System.EventHandler(this.btnDashbord_Leave);
+            this.btnBrowse.Leave += new System.EventHandler(this.btnBrowse_Leave);
             // 
             // panel2
             // 
@@ -257,13 +278,15 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button btnContactUs;
-        private System.Windows.Forms.Button btnCalender;
+        private System.Windows.Forms.Button btnAddUser;
+        private System.Windows.Forms.Button btnUpdateGame;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbltitle;
-        private System.Windows.Forms.Button btnAnalytics;
+        private System.Windows.Forms.Button btnAddGame;
         private System.Windows.Forms.Panel pnlFormLoader;
+        private Button btnUpdateUser;
+        private Button btnRegister;
     }
 }
 
