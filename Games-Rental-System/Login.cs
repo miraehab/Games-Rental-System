@@ -17,7 +17,7 @@ namespace Games_Rental_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=MISHOO;Initial Catalog=Game-Over;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-RA45GHS0\SQLEXPRESS;Initial Catalog=Game-Over;Integrated Security=True");
             try
             {
                 con.Open();
