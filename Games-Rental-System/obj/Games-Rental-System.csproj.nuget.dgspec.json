@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FCAI year 2\\semester 2\\subjects\\database IS\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj": {}
+    "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj": {}
   },
   "projects": {
-    "E:\\FCAI year 2\\semester 2\\subjects\\database IS\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj": {
+    "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FCAI year 2\\semester 2\\subjects\\database IS\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
+        "projectUniqueName": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
         "projectName": "Games-Rental-System",
-        "projectPath": "E:\\FCAI year 2\\semester 2\\subjects\\database IS\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
-        "packagesPath": "C:\\Users\\Mirette\\.nuget\\packages\\",
-        "outputPath": "E:\\FCAI year 2\\semester 2\\subjects\\database IS\\Games-Rental-System\\Games-Rental-System\\obj\\",
+        "projectPath": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\Games-Rental-System.csproj",
+        "packagesPath": "C:\\Users\\misho\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\C#\\Games-Rental-System\\Games-Rental-System\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mirette\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\misho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -9,20 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Games_Rental_System
-{
-    public partial class Register : Form
-    {
-        public Register()
-        {
+namespace Games_Rental_System{
+    public partial class Register : Form{
+        public Register(){
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-RA45GHS0\SQLEXPRESS; Initial Catalog=Game-Over;Integrated Security=True");
-            try
-            {
+        private void btnRegister_Click(object sender, EventArgs e){
+            SqlConnection con = new SqlConnection(@"Data Source=MISHOO; Initial Catalog=Game-Over;Integrated Security=True");
+            try{
                 con.Open();
                 string _userName = inpUserName.Text.ToString();
                 string _password = inpPassword.Text.ToString();
@@ -32,33 +27,27 @@ namespace Games_Rental_System
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
                 SqlDataReader data = command.ExecuteReader();
-                if (data.Read())
-                {
+                if (data.Read()){
                   MessageBox.Show("user already exist");
                 }
-                else
-                {
-                    if (_password == _confirmPassword)
-                    {
-                        
+                else{
+                    data.Close();
+                    if (_password == _confirmPassword){
                         command = new SqlCommand(_Query2, con);
                         command.ExecuteNonQuery();
                         MessageBox.Show("User added successfully");
-                        this.Close();
+                        this.Hide();
                     }
-                    else
-                    {
+                    else{
+
                         MessageBox.Show("The two passwords are not the same");
                     }
                 }
-
                 con.Close();
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex){
                 MessageBox.Show("error connecting to database");
             }
-            //SqlCommand command = new SqlCommand("insert into ADMIN VALUES ('" + inpUserName.Text.ToString() + "','" + inpPassword.Text.ToString() + "')", con);
         }
     }
 }

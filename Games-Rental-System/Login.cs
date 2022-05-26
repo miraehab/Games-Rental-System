@@ -17,7 +17,7 @@ namespace Games_Rental_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-RA45GHS0\SQLEXPRESS;Initial Catalog=Game-Over;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=MISHOO;Initial Catalog=Game-Over;Integrated Security=True");
             try
             {
                 con.Open();
@@ -30,8 +30,9 @@ namespace Games_Rental_System
                 {
                     if (_userName == data["A_USERNAME"].ToString() && _password == data["A_PASSWORD"].ToString())
                     {
-                        this.Hide();
+                        AdminUser.Admin_Name = _userName;
                         new Main().Show();
+                        this.Hide();
                     }
                     else
                     {

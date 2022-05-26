@@ -28,11 +28,6 @@ namespace Games_Rental_System
             frmBrowse_vrb.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             pnlNav.Height = btnBrowse.Height;
@@ -172,6 +167,5 @@ namespace Games_Rental_System
         {
 
         }
-
     }
 }

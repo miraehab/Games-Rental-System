@@ -34,13 +34,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.inpUserName = new System.Windows.Forms.TextBox();
+            this.inpPasswordConfirm = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.imgCover = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.inpPasswordConfirm = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCover)).BeginInit();
@@ -57,7 +57,7 @@
             this.btnRegister.Location = new System.Drawing.Point(401, 427);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(156, 42);
-            this.btnRegister.TabIndex = 19;
+            this.btnRegister.TabIndex = 22;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -102,6 +102,16 @@
             this.inpUserName.Name = "inpUserName";
             this.inpUserName.Size = new System.Drawing.Size(270, 25);
             this.inpUserName.TabIndex = 15;
+            // 
+            // inpPasswordConfirm
+            // 
+            this.inpPasswordConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.inpPasswordConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpPasswordConfirm.Location = new System.Drawing.Point(413, 351);
+            this.inpPasswordConfirm.Multiline = true;
+            this.inpPasswordConfirm.Name = "inpPasswordConfirm";
+            this.inpPasswordConfirm.Size = new System.Drawing.Size(270, 25);
+            this.inpPasswordConfirm.TabIndex = 19;
             // 
             // pictureBox2
             // 
@@ -167,25 +177,15 @@
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
             // 
-            // inpPasswordConfirm
-            // 
-            this.inpPasswordConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
-            this.inpPasswordConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inpPasswordConfirm.Location = new System.Drawing.Point(413, 351);
-            this.inpPasswordConfirm.Multiline = true;
-            this.inpPasswordConfirm.Name = "inpPasswordConfirm";
-            this.inpPasswordConfirm.Size = new System.Drawing.Size(270, 25);
-            this.inpPasswordConfirm.TabIndex = 22;
-            // 
             // Register
             // 
+            this.AcceptButton = this.btnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 561);
             this.Controls.Add(this.inpPasswordConfirm);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.inpPassword);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
@@ -194,6 +194,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.imgCover);
+            this.Controls.Add(this.btnRegister);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Register";

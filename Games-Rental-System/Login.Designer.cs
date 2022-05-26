@@ -103,6 +103,7 @@
             this.inpPassword.Name = "inpPassword";
             this.inpPassword.Size = new System.Drawing.Size(270, 16);
             this.inpPassword.TabIndex = 8;
+            this.inpPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox3
             // 
@@ -142,6 +143,7 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
