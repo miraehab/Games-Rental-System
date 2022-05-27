@@ -67,41 +67,41 @@ namespace Games_Rental_System
             btnUpdateGame.BackColor = Color.FromArgb(46, 51, 73);
 
             this.pnlFormLoader.Controls.Clear();
-            frmUpdateGame frmCalender_vrb = new frmUpdateGame() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmCalender_vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(frmCalender_vrb);
-            frmCalender_vrb.Show();
+            frmUpdateGame frmUpdateGame_vrb = new frmUpdateGame() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmUpdateGame_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmUpdateGame_vrb);
+            frmUpdateGame_vrb.Show();
             textBox1.Hide();
             lbltitle.Text = "Update Game";
         }
 
-        private void btnAddUser_Click(object sender, EventArgs e)
+        private void btnAddClient_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAddUser.Height;
-            pnlNav.Top = btnAddUser.Top;
-            btnAddUser.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnAddClient.Height;
+            pnlNav.Top = btnAddClient.Top;
+            btnAddClient.BackColor = Color.FromArgb(46, 51, 73);
 
             this.pnlFormLoader.Controls.Clear();
-            frmAddUser frmContactUs_vrb = new frmAddUser() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmContactUs_vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(frmContactUs_vrb);
-            frmContactUs_vrb.Show();
+            frmAddClient frmAddClient_vrb = new frmAddClient() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmAddClient_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmAddClient_vrb);
+            frmAddClient_vrb.Show();
             textBox1.Hide();
-            lbltitle.Text = "Add User";
+            lbltitle.Text = "Add Client";
         }
-        private void btnUpdateUser_Click(object sender, EventArgs e)
+        private void btnUpdateClient_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnUpdateUser.Height;
-            pnlNav.Top = btnUpdateUser.Top;
-            btnUpdateUser.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnUpdateClient.Height;
+            pnlNav.Top = btnUpdateClient.Top;
+            btnUpdateClient.BackColor = Color.FromArgb(46, 51, 73);
 
             this.pnlFormLoader.Controls.Clear();
-            frmUpdateUser frmUpdateUser_vrb = new frmUpdateUser() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmUpdateUser_vrb.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(frmUpdateUser_vrb);
-            frmUpdateUser_vrb.Show();
+            frmUpdateClient frmUpdateclient_vrb = new frmUpdateClient() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmUpdateclient_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmUpdateclient_vrb);
+            frmUpdateclient_vrb.Show();
             textBox1.Hide();
-            lbltitle.Text = "Update User";
+            lbltitle.Text = "Update Client Data";
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -124,13 +124,13 @@ namespace Games_Rental_System
             btnUpdateGame.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void btnAddUser_Leave(object sender, EventArgs e)
+        private void btnAddClient_Leave(object sender, EventArgs e)
         {
-            btnAddUser.BackColor = Color.FromArgb(24, 17, 68);
+            btnAddClient.BackColor = Color.FromArgb(24, 17, 68);
         }
-        private void btnUpdateUser_Leave(object sender, EventArgs e)
+        private void btnUpdateClient_Leave(object sender, EventArgs e)
         {
-            btnUpdateUser.BackColor = Color.FromArgb(24, 17, 68);
+            btnUpdateClient.BackColor = Color.FromArgb(24, 17, 68);
         }
 
         private void btnRegister_Leave(object sender, EventArgs e)
@@ -167,5 +167,7 @@ namespace Games_Rental_System
         {
 
         }
+
+ 
     }
 }

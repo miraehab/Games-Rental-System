@@ -28,7 +28,7 @@ namespace Games_Rental_System{
                 command = new SqlCommand(_Query, con);
                 SqlDataReader data = command.ExecuteReader();
                 if (data.Read()){
-                  MessageBox.Show("user already exist");
+                  MessageBox.Show("User already exists");
                 }
                 else{
                     data.Close();

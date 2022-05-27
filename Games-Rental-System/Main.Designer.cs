@@ -30,9 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
-            this.btnUpdateUser = new System.Windows.Forms.Button();
+            this.btnUpdateClient = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.btnAddUser = new System.Windows.Forms.Button();
+            this.btnAddClient = new System.Windows.Forms.Button();
             this.btnUpdateGame = new System.Windows.Forms.Button();
             this.btnAddGame = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
@@ -50,9 +50,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(17)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.pnlNav);
-            this.panel1.Controls.Add(this.btnUpdateUser);
+            this.panel1.Controls.Add(this.btnUpdateClient);
             this.panel1.Controls.Add(this.btnRegister);
-            this.panel1.Controls.Add(this.btnAddUser);
+            this.panel1.Controls.Add(this.btnAddClient);
             this.panel1.Controls.Add(this.btnUpdateGame);
             this.panel1.Controls.Add(this.btnAddGame);
             this.panel1.Controls.Add(this.btnBrowse);
@@ -70,27 +70,27 @@
             this.pnlNav.Location = new System.Drawing.Point(0, 247);
             this.pnlNav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(10, 96);
+            this.pnlNav.Size = new System.Drawing.Size(5, 96);
             this.pnlNav.TabIndex = 2;
             // 
-            // btnUpdateUser
+            // btnUpdateClient
             // 
-            this.btnUpdateUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
-            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateUser.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnUpdateUser.Image = global::Games_Rental_System.Properties.Resources.Conact;
-            this.btnUpdateUser.Location = new System.Drawing.Point(0, 377);
-            this.btnUpdateUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnUpdateUser.Name = "btnUpdateUser";
-            this.btnUpdateUser.Size = new System.Drawing.Size(217, 48);
-            this.btnUpdateUser.TabIndex = 3;
-            this.btnUpdateUser.Text = "Update User";
-            this.btnUpdateUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnUpdateUser.UseVisualStyleBackColor = true;
-            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
-            this.btnUpdateUser.Leave += new System.EventHandler(this.btnUpdateUser_Leave);
+            this.btnUpdateClient.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUpdateClient.FlatAppearance.BorderSize = 0;
+            this.btnUpdateClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateClient.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnUpdateClient.Image = global::Games_Rental_System.Properties.Resources.Conact;
+            this.btnUpdateClient.Location = new System.Drawing.Point(0, 377);
+            this.btnUpdateClient.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnUpdateClient.Name = "btnUpdateClient";
+            this.btnUpdateClient.Size = new System.Drawing.Size(217, 48);
+            this.btnUpdateClient.TabIndex = 3;
+            this.btnUpdateClient.Text = "Update Client";
+            this.btnUpdateClient.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnUpdateClient.UseVisualStyleBackColor = true;
+            this.btnUpdateClient.Click += new System.EventHandler(this.btnUpdateClient_Click);
+            this.btnUpdateClient.Leave += new System.EventHandler(this.btnUpdateClient_Leave);
             // 
             // btnRegister
             // 
@@ -111,24 +111,24 @@
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             this.btnRegister.Leave += new System.EventHandler(this.btnRegister_Leave);
             // 
-            // btnAddUser
+            // btnAddClient
             // 
-            this.btnAddUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddUser.FlatAppearance.BorderSize = 0;
-            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnAddUser.Image = global::Games_Rental_System.Properties.Resources.Conact;
-            this.btnAddUser.Location = new System.Drawing.Point(0, 329);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(217, 48);
-            this.btnAddUser.TabIndex = 1;
-            this.btnAddUser.Text = "Add User";
-            this.btnAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAddUser.UseVisualStyleBackColor = true;
-            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
-            this.btnAddUser.Leave += new System.EventHandler(this.btnAddUser_Leave);
+            this.btnAddClient.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddClient.FlatAppearance.BorderSize = 0;
+            this.btnAddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddClient.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnAddClient.Image = global::Games_Rental_System.Properties.Resources.Conact;
+            this.btnAddClient.Location = new System.Drawing.Point(0, 329);
+            this.btnAddClient.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnAddClient.Name = "btnAddClient";
+            this.btnAddClient.Size = new System.Drawing.Size(217, 48);
+            this.btnAddClient.TabIndex = 1;
+            this.btnAddClient.Text = "Add Client";
+            this.btnAddClient.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAddClient.UseVisualStyleBackColor = true;
+            this.btnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
+            this.btnAddClient.Leave += new System.EventHandler(this.btnAddClient_Leave);
             // 
             // btnUpdateGame
             // 
@@ -233,18 +233,18 @@
             this.lbltitle.Location = new System.Drawing.Point(230, 27);
             this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(162, 32);
+            this.lbltitle.Size = new System.Drawing.Size(203, 32);
             this.lbltitle.TabIndex = 10;
-            this.lbltitle.Text = "Dashboard";
+            this.lbltitle.Text = "Browse Game";
             this.lbltitle.Click += new System.EventHandler(this.lbltitle_Click);
             // 
             // pnlFormLoader
             // 
             this.pnlFormLoader.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFormLoader.Location = new System.Drawing.Point(217, 87);
+            this.pnlFormLoader.Location = new System.Drawing.Point(217, 81);
             this.pnlFormLoader.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlFormLoader.Name = "pnlFormLoader";
-            this.pnlFormLoader.Size = new System.Drawing.Size(920, 550);
+            this.pnlFormLoader.Size = new System.Drawing.Size(920, 556);
             this.pnlFormLoader.TabIndex = 14;
             // 
             // Main
@@ -262,6 +262,7 @@
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Game Over";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -277,14 +278,14 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button btnAddUser;
+        private System.Windows.Forms.Button btnAddClient;
         private System.Windows.Forms.Button btnUpdateGame;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Button btnAddGame;
         private System.Windows.Forms.Panel pnlFormLoader;
-        private Button btnUpdateUser;
+        private Button btnUpdateClient;
         private Button btnRegister;
     }
 }
