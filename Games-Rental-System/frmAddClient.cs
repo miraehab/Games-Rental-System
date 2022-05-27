@@ -17,12 +17,6 @@ namespace Games_Rental_System
         {
             InitializeComponent();
         }
-
-        private void inpClientPhone_Click(object sender, EventArgs e)
-        {
-            inpClientPhone.SelectAll();
-        }
-
         private void inpClientFirstName_Click(object sender, EventArgs e)
         {
             inpClientFirstName.SelectAll();
@@ -33,19 +27,43 @@ namespace Games_Rental_System
             inpClientSecondName.SelectAll();
         }
 
+        private void inpClientPhone_Click(object sender, EventArgs e)
+        {
+            inpClientPhone.SelectAll();
+        }
+
+        private void inpClientUsername_Click(object sender, EventArgs e)
+        {
+            inpClientUsername.SelectAll();
+        }
+
+        private void inpCLientPassword_Click(object sender, EventArgs e)
+        {
+            inpCLientPassword.SelectAll();
+        }
+
+        private void inpCLientPasswordConfirm_Click(object sender, EventArgs e)
+        {
+            inpCLientPasswordConfirm.SelectAll();
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=MISHOO; Initial Catalog=Game-Over;Integrated Security=True");
             try
             {
                 con.Open();
+                string _clientUsername = inpClientUsername.Text.ToString();
+                string _clientPassword = inpCLientPassword.Text.ToString();
+                string _clientPasswordConfirm = inpCLientPasswordConfirm.Text.ToString();
                 string _clientPhone = inpClientPhone.Text.ToString();
                 string _clientFirstName = inpClientFirstName.Text.ToString();
                 string _clientSecondName = inpClientSecondName.Text.ToString();
-                string _Query = "SELECT C_PHONENUM FROM CLIENT WHERE C_PHONENUM='" + _clientPhone + "';";
-                string _Query2 = "insert into CLIENT VALUES ('" + _clientPhone + "','" + _clientFirstName + "','" + _clientSecondName + "');";
+                string _Query = "SELECT C_USERNAME FROM CLIENT WHERE C_PHONENUM=@username;";
+                string _Query2 = "insert into CLIENT VALUES (@username,@phone,@firstName,@lastName,@password);";
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
+                command.Parameters.Add(new SqlParameter("@username", _clientUsername));
                 SqlDataReader data = command.ExecuteReader();
                 if (data.Read())
                 {
@@ -54,20 +72,43 @@ namespace Games_Rental_System
                 else
                 {
                     data.Close();
-                    command = new SqlCommand(_Query2, con);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Client added successfully");
-                    inpClientPhone.Text = "Enter Client Phone Number";
-                    inpClientFirstName.Text = "Enter Client First Name";
-                    inpClientSecondName.Text = "Enter Client Second Name";
+                    if (_clientPassword == _clientPasswordConfirm)
+                    {
+                        command = new SqlCommand(_Query2, con);
+                        command.Parameters.Add(new SqlParameter("@username", _clientUsername));
+                        command.Parameters.Add(new SqlParameter("@password", _clientPassword));
+                        command.Parameters.Add(new SqlParameter("@phone", _clientPhone));
+                        command.Parameters.Add(new SqlParameter("@firstName", _clientFirstName));
+                        command.Parameters.Add(new SqlParameter("@lastName", _clientSecondName));
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Client added successfully");
+                        inpClientFirstName.Text = "Enter Client First Name";
+                        inpClientSecondName.Text = "Enter Client Second Name";
+                        inpClientPhone.Text = "Enter Client Phone Number";
+                        inpClientUsername.Text = "Enter Client Username";
+                        inpCLientPassword.Text = "Enter Client Password";
+                        inpCLientPasswordConfirm.Text = "Enter Client Password";
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("The two passwords are not the same");
+                    }
                 }
                 con.Close();
+            
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("error connecting to database");
             }
         }
+
+        private void frmAddClient_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
     
 }

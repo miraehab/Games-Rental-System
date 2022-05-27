@@ -38,7 +38,7 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.inpSearch = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
             this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -207,23 +207,21 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
+            // inpSearch
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(773, 34);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 29);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "  Search for something...\r\n";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.inpSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
+            this.inpSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inpSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.inpSearch.Location = new System.Drawing.Point(773, 34);
+            this.inpSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.inpSearch.Multiline = true;
+            this.inpSearch.Name = "inpSearch";
+            this.inpSearch.Size = new System.Drawing.Size(341, 29);
+            this.inpSearch.TabIndex = 11;
+            this.inpSearch.Text = "Search for something...\r\n";
+            this.inpSearch.Click += new System.EventHandler(this.inpSearch_Click);
             // 
             // lbltitle
             // 
@@ -236,7 +234,6 @@
             this.lbltitle.Size = new System.Drawing.Size(203, 32);
             this.lbltitle.TabIndex = 10;
             this.lbltitle.Text = "Browse Game";
-            this.lbltitle.Click += new System.EventHandler(this.lbltitle_Click);
             // 
             // pnlFormLoader
             // 
@@ -254,7 +251,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1137, 637);
             this.Controls.Add(this.pnlFormLoader);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.inpSearch);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -277,11 +274,10 @@
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnAddClient;
         private System.Windows.Forms.Button btnUpdateGame;
         private System.Windows.Forms.Panel pnlNav;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox inpSearch;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Button btnAddGame;
         private System.Windows.Forms.Panel pnlFormLoader;

@@ -22,10 +22,11 @@ namespace Games_Rental_System{
                 string _userName = inpUserName.Text.ToString();
                 string _password = inpPassword.Text.ToString();
                 string _confirmPassword = inpPasswordConfirm.Text.ToString();
-                string _Query = "SELECT A_USERNAME FROM ADMIN WHERE A_USERNAME='" + _userName + "';";
-                string _Query2 = "insert into ADMIN VALUES ('" + _userName + "','" + _password + "');";
+                string _Query = "SELECT A_USERNAME FROM ADMIN WHERE A_USERNAME=@username;";
+                string _Query2 = "insert into ADMIN VALUES (@username,@password);";
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
+                command.Parameters.Add(new SqlParameter("@username", _userName));
                 SqlDataReader data = command.ExecuteReader();
                 if (data.Read()){
                   MessageBox.Show("User already exists");
@@ -34,6 +35,8 @@ namespace Games_Rental_System{
                     data.Close();
                     if (_password == _confirmPassword){
                         command = new SqlCommand(_Query2, con);
+                        command.Parameters.Add(new SqlParameter("@username", _userName));
+                        command.Parameters.Add(new SqlParameter("@password", _password));
                         command.ExecuteNonQuery();
                         MessageBox.Show("User added successfully");
                         this.Hide();
@@ -45,7 +48,7 @@ namespace Games_Rental_System{
                 }
                 con.Close();
             }
-            catch (Exception ex){
+            catch{
                 MessageBox.Show("error connecting to database");
             }
         }

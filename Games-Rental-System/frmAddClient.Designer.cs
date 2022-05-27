@@ -41,9 +41,24 @@
             this.inpClientSecondName = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.inpCLientPasswordConfirm = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.inpCLientPassword = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.inpClientUsername = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.pnl_name.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // inpClientPhone
@@ -57,7 +72,7 @@
             this.inpClientPhone.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientPhone.Location = new System.Drawing.Point(4, 4);
             this.inpClientPhone.Name = "inpClientPhone";
-            this.inpClientPhone.Size = new System.Drawing.Size(277, 23);
+            this.inpClientPhone.Size = new System.Drawing.Size(246, 23);
             this.inpClientPhone.TabIndex = 15;
             this.inpClientPhone.Text = "Enter Client Phone Number";
             this.inpClientPhone.Click += new System.EventHandler(this.inpClientPhone_Click);
@@ -66,10 +81,10 @@
             // 
             this.pnl_name.Controls.Add(this.inpClientPhone);
             this.pnl_name.Controls.Add(this.panel2);
-            this.pnl_name.Location = new System.Drawing.Point(371, 98);
+            this.pnl_name.Location = new System.Drawing.Point(602, 158);
             this.pnl_name.Name = "pnl_name";
-            this.pnl_name.Size = new System.Drawing.Size(283, 46);
-            this.pnl_name.TabIndex = 0;
+            this.pnl_name.Size = new System.Drawing.Size(252, 46);
+            this.pnl_name.TabIndex = 3;
             // 
             // panel2
             // 
@@ -78,7 +93,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(4, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(277, 1);
+            this.panel2.Size = new System.Drawing.Size(246, 1);
             this.panel2.TabIndex = 2;
             // 
             // btnAdd
@@ -90,7 +105,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(315, 401);
+            this.btnAdd.Location = new System.Drawing.Point(344, 428);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(174, 58);
             this.btnAdd.TabIndex = 10;
@@ -103,20 +118,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(161, 104);
+            this.label1.Location = new System.Drawing.Point(456, 164);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 25);
+            this.label1.Size = new System.Drawing.Size(143, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Client Phone";
+            this.label1.Text = "Phone Number";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.inpClientFirstName);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(371, 175);
+            this.panel1.Location = new System.Drawing.Point(193, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 46);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(221, 46);
+            this.panel1.TabIndex = 0;
             // 
             // inpClientFirstName
             // 
@@ -129,7 +144,7 @@
             this.inpClientFirstName.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientFirstName.Location = new System.Drawing.Point(4, 4);
             this.inpClientFirstName.Name = "inpClientFirstName";
-            this.inpClientFirstName.Size = new System.Drawing.Size(277, 23);
+            this.inpClientFirstName.Size = new System.Drawing.Size(215, 23);
             this.inpClientFirstName.TabIndex = 18;
             this.inpClientFirstName.Text = "Enter Client First Name";
             this.inpClientFirstName.Click += new System.EventHandler(this.inpClientFirstName_Click);
@@ -141,7 +156,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(4, 33);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(277, 1);
+            this.panel3.Size = new System.Drawing.Size(215, 1);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -149,20 +164,20 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(161, 181);
+            this.label2.Location = new System.Drawing.Point(72, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 25);
+            this.label2.Size = new System.Drawing.Size(106, 25);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Client First Name";
+            this.label2.Text = "First Name";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.inpClientSecondName);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(371, 263);
+            this.panel4.Location = new System.Drawing.Point(602, 72);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(283, 46);
-            this.panel4.TabIndex = 2;
+            this.panel4.Size = new System.Drawing.Size(252, 46);
+            this.panel4.TabIndex = 1;
             // 
             // inpClientSecondName
             // 
@@ -175,7 +190,7 @@
             this.inpClientSecondName.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientSecondName.Location = new System.Drawing.Point(4, 4);
             this.inpClientSecondName.Name = "inpClientSecondName";
-            this.inpClientSecondName.Size = new System.Drawing.Size(277, 23);
+            this.inpClientSecondName.Size = new System.Drawing.Size(246, 23);
             this.inpClientSecondName.TabIndex = 19;
             this.inpClientSecondName.Text = "Enter Client Second Name";
             this.inpClientSecondName.Click += new System.EventHandler(this.inpClientSecondName_Click);
@@ -187,7 +202,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(4, 33);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(277, 1);
+            this.panel5.Size = new System.Drawing.Size(246, 1);
             this.panel5.TabIndex = 2;
             // 
             // label3
@@ -195,11 +210,149 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(161, 269);
+            this.label3.Location = new System.Drawing.Point(455, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 25);
+            this.label3.Size = new System.Drawing.Size(137, 25);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Client Second Name";
+            this.label3.Text = "Second Name";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(74, 325);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(171, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Confirm Password";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.inpCLientPasswordConfirm);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Location = new System.Drawing.Point(321, 319);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(383, 46);
+            this.panel6.TabIndex = 5;
+            // 
+            // inpCLientPasswordConfirm
+            // 
+            this.inpCLientPasswordConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.inpCLientPasswordConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.inpCLientPasswordConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpCLientPasswordConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inpCLientPasswordConfirm.ForeColor = System.Drawing.SystemColors.Window;
+            this.inpCLientPasswordConfirm.Location = new System.Drawing.Point(4, 4);
+            this.inpCLientPasswordConfirm.Name = "inpCLientPasswordConfirm";
+            this.inpCLientPasswordConfirm.Size = new System.Drawing.Size(377, 23);
+            this.inpCLientPasswordConfirm.TabIndex = 15;
+            this.inpCLientPasswordConfirm.Text = "Enter Client Password";
+            this.inpCLientPasswordConfirm.Click += new System.EventHandler(this.inpCLientPasswordConfirm_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(4, 33);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(377, 1);
+            this.panel7.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(74, 243);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 25);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Password";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.inpCLientPassword);
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Location = new System.Drawing.Point(321, 237);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(385, 46);
+            this.panel8.TabIndex = 4;
+            // 
+            // inpCLientPassword
+            // 
+            this.inpCLientPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.inpCLientPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.inpCLientPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpCLientPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inpCLientPassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.inpCLientPassword.Location = new System.Drawing.Point(4, 4);
+            this.inpCLientPassword.Name = "inpCLientPassword";
+            this.inpCLientPassword.Size = new System.Drawing.Size(379, 23);
+            this.inpCLientPassword.TabIndex = 15;
+            this.inpCLientPassword.Text = "Enter Client Password";
+            this.inpCLientPassword.Click += new System.EventHandler(this.inpCLientPassword_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(4, 33);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(379, 1);
+            this.panel9.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(72, 164);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 25);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Username";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.inpClientUsername);
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Location = new System.Drawing.Point(193, 158);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(221, 46);
+            this.panel10.TabIndex = 2;
+            // 
+            // inpClientUsername
+            // 
+            this.inpClientUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.inpClientUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.inpClientUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inpClientUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inpClientUsername.ForeColor = System.Drawing.SystemColors.Window;
+            this.inpClientUsername.Location = new System.Drawing.Point(4, 4);
+            this.inpClientUsername.Name = "inpClientUsername";
+            this.inpClientUsername.Size = new System.Drawing.Size(215, 23);
+            this.inpClientUsername.TabIndex = 15;
+            this.inpClientUsername.Text = "Enter Client Username";
+            this.inpClientUsername.Click += new System.EventHandler(this.inpClientUsername_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Location = new System.Drawing.Point(4, 33);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(215, 1);
+            this.panel11.TabIndex = 2;
             // 
             // frmAddClient
             // 
@@ -210,21 +363,34 @@
             this.ClientSize = new System.Drawing.Size(920, 556);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pnl_name);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.pnl_name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmAddClient";
             this.Text = "frmContactUs";
+            this.Load += new System.EventHandler(this.frmAddClient_Load);
             this.pnl_name.ResumeLayout(false);
             this.pnl_name.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +411,17 @@
         private Panel panel5;
         private TextBox inpClientSecondName;
         private Label label3;
+        private Label label4;
+        private Panel panel6;
+        private TextBox inpCLientPasswordConfirm;
+        private Panel panel7;
+        private Label label5;
+        private Panel panel8;
+        private TextBox inpCLientPassword;
+        private Panel panel9;
+        private Label label6;
+        private Panel panel10;
+        private TextBox inpClientUsername;
+        private Panel panel11;
     }
 }

@@ -8,15 +8,11 @@ namespace Games_Rental_System
 {
     internal class AdminUser
     {
-        static string AdminName;
+        static string AdminName = "admin";
         public static string Admin_Name
         {
-            get {
-                return AdminName; 
-            }
-            set {
-                AdminName = value; 
-            }
+            get => AdminName;
+            set => AdminName = value;
         }
     }
 }

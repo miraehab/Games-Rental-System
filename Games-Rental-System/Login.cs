@@ -23,8 +23,9 @@ namespace Games_Rental_System
                 con.Open();
                 string _userName = inpUserName.Text.ToString();
                 string _password = inpPassword.Text.ToString();
-                string _Query = "SELECT * FROM ADMIN WHERE A_USERNAME='" + _userName + "'";
+                string _Query = "SELECT * FROM ADMIN WHERE A_USERNAME=@username";
                 SqlCommand command = new SqlCommand(_Query,con);
+                command.Parameters.Add(new SqlParameter("@username", _userName));
                 SqlDataReader data = command.ExecuteReader();
                 if (data.Read())
                 {
@@ -44,7 +45,7 @@ namespace Games_Rental_System
                 }
                 con.Close();
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("error connecting to database");
             }

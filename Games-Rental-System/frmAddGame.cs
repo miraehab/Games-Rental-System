@@ -43,7 +43,7 @@ namespace Games_Rental_System
 
         private void btnPhoto_Click(object sender, EventArgs e)
         {
-            Stream mystream = null;
+            Stream? mystream = null;
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png;)|*.jpg; *.jpeg; *.gif; *.bmp; *.png;";
             if(openFileDialog.ShowDialog() == DialogResult.OK)
@@ -54,9 +54,9 @@ namespace Games_Rental_System
                     {
                         pbPhoto.Image = new Bitmap(openFileDialog.FileName);
                     }
-                }catch (Exception ex)
+                }catch
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Select Correct Image Type");
                 }
             }
         }
@@ -71,14 +71,16 @@ namespace Games_Rental_System
                 string _vendorName = inpVendorName.Text.ToString();
                 string _gameAmount = inpGameAmount.Text.ToString();
                 string _gamePrice = inpGamePrice.Text.ToString();
-                DateTime now = DateTime.Now;
+                string _gameCategory = Categories.Text.ToString();
+                DateTime today = DateTime.Now;
                 MemoryStream stream = new MemoryStream();
-                pbPhoto.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+                pbPhoto.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                 byte[] pic = stream.ToArray();
-                string _Query = "SELECT * FROM GAME WHERE G_NAME='" + _gameName + "' AND V_NAME = '" + _vendorName + "';";
-                string _Query2 = "insert into GAME (G_NAME,V_NAME,AMOUNT,PRICE,G_PHOTO,A_USERNAME,G_DATE) VALUES ('" + _gameName + "','" + _vendorName + "','" + _gameAmount + "','" + _gamePrice + "', @pic, '" + AdminUser.Admin_Name + "','" + now + "');";
+                string _Query = "SELECT * FROM GAME WHERE G_NAME=@gameName;";
+                string _Query2 = "insert into GAME (G_NAME,V_NAME,AMOUNT,PRICE,G_PHOTO,A_USERNAME,G_DATE,G_CATEGORY) VALUES (@gameName,@vendorName,@amount,@price, @pic,@user,@date,@category);";
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
+                command.Parameters.Add(new SqlParameter("@gameName", _gameName));
                 SqlDataReader data = command.ExecuteReader();
                 if (data.Read())
                 {
@@ -88,7 +90,14 @@ namespace Games_Rental_System
                 {
                     data.Close();
                     command = new SqlCommand(_Query2, con);
+                    command.Parameters.Add(new SqlParameter("@gameName", _gameName));
+                    command.Parameters.Add(new SqlParameter("@vendorName", _vendorName));
+                    command.Parameters.Add(new SqlParameter("@amount", _gameAmount));
+                    command.Parameters.Add(new SqlParameter("@price", _gamePrice));
                     command.Parameters.Add("@pic", SqlDbType.Image).Value = pic;
+                    command.Parameters.Add(new SqlParameter("@user", AdminUser.Admin_Name));
+                    command.Parameters.Add(new SqlParameter("@date", today));
+                    command.Parameters.Add(new SqlParameter("@category", _gameCategory));
                     command.ExecuteNonQuery();
                     MessageBox.Show("Game added successfully");
                     inpGameName.Text = "Enter Game Name";
@@ -100,10 +109,12 @@ namespace Games_Rental_System
                 con.Close();
 
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("error connecting to database");
             }
         }
+
+
     }
 }

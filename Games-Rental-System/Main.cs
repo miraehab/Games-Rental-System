@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
+
 namespace Games_Rental_System
 {
     public partial class Main : Form
@@ -41,7 +42,7 @@ namespace Games_Rental_System
             frmBrowse_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmBrowse_vrb);
             frmBrowse_vrb.Show();
-            textBox1.Show();
+            inpSearch.Show();
 
         }
 
@@ -57,7 +58,7 @@ namespace Games_Rental_System
             frmAddGame_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmAddGame_vrb);
             frmAddGame_vrb.Show();
-            textBox1.Hide();
+            inpSearch.Hide();
         }
 
         private void btnUpdateGame_Click(object sender, EventArgs e)
@@ -71,7 +72,7 @@ namespace Games_Rental_System
             frmUpdateGame_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmUpdateGame_vrb);
             frmUpdateGame_vrb.Show();
-            textBox1.Hide();
+            inpSearch.Hide();
             lbltitle.Text = "Update Game";
         }
 
@@ -86,7 +87,7 @@ namespace Games_Rental_System
             frmAddClient_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmAddClient_vrb);
             frmAddClient_vrb.Show();
-            textBox1.Hide();
+            inpSearch.Hide();
             lbltitle.Text = "Add Client";
         }
         private void btnUpdateClient_Click(object sender, EventArgs e)
@@ -100,7 +101,7 @@ namespace Games_Rental_System
             frmUpdateclient_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmUpdateclient_vrb);
             frmUpdateclient_vrb.Show();
-            textBox1.Hide();
+            inpSearch.Hide();
             lbltitle.Text = "Update Client Data";
         }
 
@@ -138,36 +139,9 @@ namespace Games_Rental_System
             btnRegister.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void inpSearch_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            inpSearch.SelectAll();
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbltitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
- 
     }
 }
