@@ -93,7 +93,7 @@
             this.inpClientSecondName.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientSecondName.Location = new System.Drawing.Point(4, 4);
             this.inpClientSecondName.Name = "inpClientSecondName";
-            this.inpClientSecondName.Size = new System.Drawing.Size(290, 23);
+            this.inpClientSecondName.Size = new System.Drawing.Size(287, 23);
             this.inpClientSecondName.TabIndex = 19;
             this.inpClientSecondName.Text = "Enter Client Second Name";
             // 
@@ -138,7 +138,7 @@
             this.inpClientFirstName.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientFirstName.Location = new System.Drawing.Point(4, 4);
             this.inpClientFirstName.Name = "inpClientFirstName";
-            this.inpClientFirstName.Size = new System.Drawing.Size(290, 23);
+            this.inpClientFirstName.Size = new System.Drawing.Size(287, 23);
             this.inpClientFirstName.TabIndex = 18;
             this.inpClientFirstName.Text = "Enter Client First Name";
             // 
@@ -189,7 +189,7 @@
             this.inpClientPhone.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientPhone.Location = new System.Drawing.Point(4, 4);
             this.inpClientPhone.Name = "inpClientPhone";
-            this.inpClientPhone.Size = new System.Drawing.Size(290, 23);
+            this.inpClientPhone.Size = new System.Drawing.Size(287, 23);
             this.inpClientPhone.TabIndex = 15;
             this.inpClientPhone.Text = "Enter Client Phone Number";
             // 
@@ -223,7 +223,7 @@
             this.inpClientOldPhone.ForeColor = System.Drawing.SystemColors.Window;
             this.inpClientOldPhone.Location = new System.Drawing.Point(4, 4);
             this.inpClientOldPhone.Name = "inpClientOldPhone";
-            this.inpClientOldPhone.Size = new System.Drawing.Size(290, 23);
+            this.inpClientOldPhone.Size = new System.Drawing.Size(287, 23);
             this.inpClientOldPhone.TabIndex = 15;
             this.inpClientOldPhone.Text = "Enter Client Old Phone Number";
             // 
@@ -250,6 +250,7 @@
             // 
             // frmUpdateClient
             // 
+            this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));

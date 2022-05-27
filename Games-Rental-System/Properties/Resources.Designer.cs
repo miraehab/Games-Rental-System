@@ -73,6 +73,16 @@ namespace Games_Rental_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2b589b43ba83e08f8c8f43433a9a64711 {
+            get {
+                object obj = ResourceManager.GetObject("2b589b43ba83e08f8c8f43433a9a64711", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button {
             get {
                 object obj = ResourceManager.GetObject("button", resourceCulture);
@@ -133,6 +143,16 @@ namespace Games_Rental_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap da3boqn_b579891b_64ec_4829_87fd_30ec09c5105f {
+            get {
+                object obj = ResourceManager.GetObject("da3boqn-b579891b-64ec-4829-87fd-30ec09c5105f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diagram {
             get {
                 object obj = ResourceManager.GetObject("diagram", resourceCulture);
@@ -183,6 +203,16 @@ namespace Games_Rental_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lrg_calendar {
             get {
                 object obj = ResourceManager.GetObject("Lrg-calendar", resourceCulture);
@@ -226,6 +256,16 @@ namespace Games_Rental_System.Properties {
         internal static System.Drawing.Bitmap money_bag {
             get {
                 object obj = ResourceManager.GetObject("money-bag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2022_05_16_211003 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2022-05-16 211003", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
