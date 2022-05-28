@@ -27,6 +27,22 @@ namespace Games_Rental_System
             frmBrowse_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmBrowse_vrb);
             frmBrowse_vrb.Show();
+            if (User.isAdmin)
+            {
+                btnAddGame.Visible = true;
+                btnUpdateGame.Visible = true;
+                btnAddClient.Visible = true;
+                btnUpdateClient.Visible = true;
+                btnRegister.Visible = true;
+            }
+            else
+            {
+                btnAddGame.Visible = false;
+                btnUpdateGame.Visible = false;
+                btnAddClient.Visible = false;
+                btnUpdateClient.Visible = false;
+                btnRegister.Visible = false;
+            }
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)

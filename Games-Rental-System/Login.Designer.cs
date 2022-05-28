@@ -37,6 +37,7 @@
             this.inpPassword = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnLoginAdmin = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgCover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -126,6 +127,21 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Password";
             // 
+            // btnLoginAdmin
+            // 
+            this.btnLoginAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLoginAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLoginAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoginAdmin.ForeColor = System.Drawing.Color.Snow;
+            this.btnLoginAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnLoginAdmin.Image")));
+            this.btnLoginAdmin.Location = new System.Drawing.Point(527, 350);
+            this.btnLoginAdmin.Name = "btnLoginAdmin";
+            this.btnLoginAdmin.Size = new System.Drawing.Size(156, 42);
+            this.btnLoginAdmin.TabIndex = 12;
+            this.btnLoginAdmin.Text = "Login as admin";
+            this.btnLoginAdmin.UseVisualStyleBackColor = false;
+            this.btnLoginAdmin.Click += new System.EventHandler(this.btnLoginAdmin_Click);
+            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
@@ -133,7 +149,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.Snow;
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
-            this.btnLogin.Location = new System.Drawing.Point(355, 342);
+            this.btnLogin.Location = new System.Drawing.Point(346, 350);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(156, 42);
             this.btnLogin.TabIndex = 10;
@@ -148,7 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(745, 450);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnLoginAdmin);
             this.Controls.Add(this.inpPassword);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
@@ -157,6 +173,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.imgCover);
+            this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Login";
@@ -178,6 +195,7 @@
         private TextBox inpPassword;
         private PictureBox pictureBox3;
         private Label label3;
+        private Button btnLoginAdmin;
         private Button btnLogin;
     }
 }

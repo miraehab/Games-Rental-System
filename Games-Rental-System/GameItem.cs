@@ -27,31 +27,21 @@ namespace Games_Rental_System
             MemoryStream ms = new MemoryStream((byte[])_game["G_PHOTO"]);
             Image img = new Bitmap(ms);
             pbPhoto.Image = img;
+            if (User.isAdmin)
+            {
+                btnRent.Visible = false;
+                btnReturn.Visible = false;
+            }
+            else
+            {
+                btnRent.Visible = true;
+                btnReturn.Visible = true;
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnRent_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GameItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Rent");
         }
     }
 }

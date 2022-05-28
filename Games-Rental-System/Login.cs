@@ -23,15 +23,16 @@ namespace Games_Rental_System
                 con.Open();
                 string _userName = inpUserName.Text.ToString();
                 string _password = inpPassword.Text.ToString();
-                string _Query = "SELECT * FROM ADMIN WHERE A_USERNAME=@username";
-                SqlCommand command = new SqlCommand(_Query,con);
+                string _Query = "SELECT * FROM CLIENT WHERE C_USERNAME=@username";
+                SqlCommand command = new SqlCommand(_Query, con);
                 command.Parameters.Add(new SqlParameter("@username", _userName));
                 SqlDataReader data = command.ExecuteReader();
                 if (data.Read())
                 {
-                    if (_userName == data["A_USERNAME"].ToString() && _password == data["A_PASSWORD"].ToString())
+                    if (_userName == data["C_USERNAME"].ToString() && _password == data["C_PASSWORD"].ToString())
                     {
-                        AdminUser.Admin_Name = _userName;
+                        User.User_Name = _userName;
+                        User.isAdmin = false;
                         new Main().Show();
                         this.Hide();
                     }
@@ -40,7 +41,8 @@ namespace Games_Rental_System
                         MessageBox.Show("Wrong Password");
                     }
                 }
-                else {
+                else
+                {
                     MessageBox.Show("User doesn't Exist");
                 }
                 con.Close();
@@ -49,9 +51,44 @@ namespace Games_Rental_System
             {
                 MessageBox.Show("error connecting to database");
             }
-            
         }
 
-
+        private void btnLoginAdmin_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=MISHOO;Initial Catalog=Game-Over;Integrated Security=True");
+            try
+            {
+                con.Open();
+                string _userName = inpUserName.Text.ToString();
+                string _password = inpPassword.Text.ToString();
+                string _Query = "SELECT * FROM ADMIN WHERE A_USERNAME=@username";
+                SqlCommand command = new SqlCommand(_Query, con);
+                command.Parameters.Add(new SqlParameter("@username", _userName));
+                SqlDataReader data = command.ExecuteReader();
+                if (data.Read())
+                {
+                    if (_userName == data["A_USERNAME"].ToString() && _password == data["A_PASSWORD"].ToString())
+                    {
+                        User.User_Name = _userName;
+                        User.isAdmin = true;
+                        new Main().Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong Password");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("this Admin User doesn't Exist");
+                }
+                con.Close();
+            }
+            catch
+            {
+                MessageBox.Show("error connecting to database");
+            }
+        }
     }
 }

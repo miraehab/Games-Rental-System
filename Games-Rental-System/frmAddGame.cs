@@ -95,7 +95,7 @@ namespace Games_Rental_System
                     command.Parameters.Add(new SqlParameter("@amount", _gameAmount));
                     command.Parameters.Add(new SqlParameter("@price", _gamePrice));
                     command.Parameters.Add("@pic", SqlDbType.Image).Value = pic;
-                    command.Parameters.Add(new SqlParameter("@user", AdminUser.Admin_Name));
+                    command.Parameters.Add(new SqlParameter("@user", User.User_Name));
                     command.Parameters.Add(new SqlParameter("@date", today));
                     command.Parameters.Add(new SqlParameter("@category", _gameCategory));
                     command.ExecuteNonQuery();

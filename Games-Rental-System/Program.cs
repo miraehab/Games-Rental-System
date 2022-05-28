@@ -10,7 +10,7 @@ namespace Games_Rental_System
         {
             ApplicationConfiguration.Initialize();
             Application.EnableVisualStyles();
-            Application.Run(new Main());
+            Application.Run(new Login());
         }
     }
 }
