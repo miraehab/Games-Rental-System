@@ -53,6 +53,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.inpClientUsername = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.lbltitle = new System.Windows.Forms.Label();
             this.pnl_name.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -81,7 +82,7 @@
             // 
             this.pnl_name.Controls.Add(this.inpClientPhone);
             this.pnl_name.Controls.Add(this.panel2);
-            this.pnl_name.Location = new System.Drawing.Point(602, 158);
+            this.pnl_name.Location = new System.Drawing.Point(602, 238);
             this.pnl_name.Name = "pnl_name";
             this.pnl_name.Size = new System.Drawing.Size(252, 46);
             this.pnl_name.TabIndex = 3;
@@ -105,7 +106,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(344, 428);
+            this.btnAdd.Location = new System.Drawing.Point(344, 508);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(174, 58);
             this.btnAdd.TabIndex = 10;
@@ -118,7 +119,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(456, 164);
+            this.label1.Location = new System.Drawing.Point(456, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 25);
             this.label1.TabIndex = 3;
@@ -128,7 +129,7 @@
             // 
             this.panel1.Controls.Add(this.inpClientFirstName);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(193, 72);
+            this.panel1.Location = new System.Drawing.Point(193, 152);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 46);
             this.panel1.TabIndex = 0;
@@ -164,7 +165,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(72, 78);
+            this.label2.Location = new System.Drawing.Point(72, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 25);
             this.label2.TabIndex = 3;
@@ -174,7 +175,7 @@
             // 
             this.panel4.Controls.Add(this.inpClientSecondName);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(602, 72);
+            this.panel4.Location = new System.Drawing.Point(602, 152);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(252, 46);
             this.panel4.TabIndex = 1;
@@ -210,7 +211,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(455, 78);
+            this.label3.Location = new System.Drawing.Point(455, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 25);
             this.label3.TabIndex = 3;
@@ -221,7 +222,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(74, 325);
+            this.label4.Location = new System.Drawing.Point(74, 405);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 25);
             this.label4.TabIndex = 3;
@@ -231,7 +232,7 @@
             // 
             this.panel6.Controls.Add(this.inpCLientPasswordConfirm);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(321, 319);
+            this.panel6.Location = new System.Drawing.Point(321, 399);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(383, 46);
             this.panel6.TabIndex = 5;
@@ -267,7 +268,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(74, 243);
+            this.label5.Location = new System.Drawing.Point(74, 323);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 3;
@@ -277,7 +278,7 @@
             // 
             this.panel8.Controls.Add(this.inpCLientPassword);
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(321, 237);
+            this.panel8.Location = new System.Drawing.Point(321, 317);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(385, 46);
             this.panel8.TabIndex = 4;
@@ -313,7 +314,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(72, 164);
+            this.label6.Location = new System.Drawing.Point(72, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 25);
             this.label6.TabIndex = 3;
@@ -323,7 +324,7 @@
             // 
             this.panel10.Controls.Add(this.inpClientUsername);
             this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(193, 158);
+            this.panel10.Location = new System.Drawing.Point(193, 238);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(221, 46);
             this.panel10.TabIndex = 2;
@@ -354,13 +355,26 @@
             this.panel11.Size = new System.Drawing.Size(215, 1);
             this.panel11.TabIndex = 2;
             // 
+            // lbltitle
+            // 
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbltitle.Location = new System.Drawing.Point(13, 17);
+            this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(156, 32);
+            this.lbltitle.TabIndex = 11;
+            this.lbltitle.Text = "Add Client";
+            // 
             // frmAddClient
             // 
             this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(920, 556);
+            this.ClientSize = new System.Drawing.Size(920, 636);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel10);
@@ -423,5 +437,6 @@
         private Panel panel10;
         private TextBox inpClientUsername;
         private Panel panel11;
+        private Label lbltitle;
     }
 }

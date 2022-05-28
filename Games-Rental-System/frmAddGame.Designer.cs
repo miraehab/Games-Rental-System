@@ -50,6 +50,7 @@
             this.btnPhoto = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Categories = new System.Windows.Forms.ComboBox();
+            this.lbltitle = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnl_name.SuspendLayout();
@@ -62,7 +63,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(55, 347);
+            this.label3.Location = new System.Drawing.Point(55, 427);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 14;
@@ -73,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(49, 275);
+            this.label2.Location = new System.Drawing.Point(49, 355);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 25);
             this.label2.TabIndex = 15;
@@ -83,7 +84,7 @@
             // 
             this.panel4.Controls.Add(this.inpGameAmount);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(170, 341);
+            this.panel4.Location = new System.Drawing.Point(170, 421);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(211, 46);
             this.panel4.TabIndex = 13;
@@ -119,7 +120,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(49, 200);
+            this.label1.Location = new System.Drawing.Point(49, 280);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 16;
@@ -129,7 +130,7 @@
             // 
             this.panel1.Controls.Add(this.inpVendorName);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(259, 269);
+            this.panel1.Location = new System.Drawing.Point(259, 349);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(491, 46);
             this.panel1.TabIndex = 12;
@@ -169,7 +170,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(575, 442);
+            this.btnAdd.Location = new System.Drawing.Point(575, 522);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(174, 58);
             this.btnAdd.TabIndex = 17;
@@ -181,7 +182,7 @@
             // 
             this.pnl_name.Controls.Add(this.inpGameName);
             this.pnl_name.Controls.Add(this.panel2);
-            this.pnl_name.Location = new System.Drawing.Point(259, 194);
+            this.pnl_name.Location = new System.Drawing.Point(259, 274);
             this.pnl_name.Name = "pnl_name";
             this.pnl_name.Size = new System.Drawing.Size(488, 46);
             this.pnl_name.TabIndex = 11;
@@ -216,7 +217,7 @@
             // 
             this.panel6.Controls.Add(this.inpGamePrice);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(563, 341);
+            this.panel6.Location = new System.Drawing.Point(563, 421);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(186, 46);
             this.panel6.TabIndex = 14;
@@ -252,7 +253,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(452, 347);
+            this.label4.Location = new System.Drawing.Point(452, 427);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 25);
             this.label4.TabIndex = 14;
@@ -263,7 +264,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(55, 75);
+            this.label5.Location = new System.Drawing.Point(55, 155);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 25);
             this.label5.TabIndex = 16;
@@ -272,7 +273,7 @@
             // pbPhoto
             // 
             this.pbPhoto.Image = global::Games_Rental_System.Properties.Resources.Logo1;
-            this.pbPhoto.Location = new System.Drawing.Point(202, 7);
+            this.pbPhoto.Location = new System.Drawing.Point(202, 87);
             this.pbPhoto.Name = "pbPhoto";
             this.pbPhoto.Size = new System.Drawing.Size(323, 149);
             this.pbPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -281,7 +282,7 @@
             // 
             // btnPhoto
             // 
-            this.btnPhoto.Location = new System.Drawing.Point(540, 114);
+            this.btnPhoto.Location = new System.Drawing.Point(540, 194);
             this.btnPhoto.Name = "btnPhoto";
             this.btnPhoto.Size = new System.Drawing.Size(138, 42);
             this.btnPhoto.TabIndex = 19;
@@ -294,7 +295,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(55, 436);
+            this.label6.Location = new System.Drawing.Point(55, 516);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 25);
             this.label6.TabIndex = 14;
@@ -318,10 +319,22 @@
             "Action-adventure",
             "Survival and horror",
             "Platformer"});
-            this.Categories.Location = new System.Drawing.Point(182, 441);
+            this.Categories.Location = new System.Drawing.Point(182, 521);
             this.Categories.Name = "Categories";
             this.Categories.Size = new System.Drawing.Size(266, 23);
             this.Categories.TabIndex = 20;
+            // 
+            // lbltitle
+            // 
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbltitle.Location = new System.Drawing.Point(13, 17);
+            this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(157, 32);
+            this.lbltitle.TabIndex = 21;
+            this.lbltitle.Text = "Add Game";
             // 
             // frmAddGame
             // 
@@ -330,7 +343,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(920, 556);
+            this.ClientSize = new System.Drawing.Size(920, 636);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.Categories);
             this.Controls.Add(this.btnPhoto);
             this.Controls.Add(this.pbPhoto);
@@ -387,5 +401,6 @@
         private Button btnPhoto;
         private Label label6;
         private ComboBox Categories;
+        private Label lbltitle;
     }
 }

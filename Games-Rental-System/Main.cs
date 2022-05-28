@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 
 namespace Games_Rental_System
@@ -21,8 +22,6 @@ namespace Games_Rental_System
             pnlNav.Height = btnBrowse.Height;
             pnlNav.Top = btnBrowse.Top;
             pnlNav.Left = btnBrowse.Left;
-
-            lbltitle.Text = "Browse Games";
             frmBrowse frmBrowse_vrb = new frmBrowse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmBrowse_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmBrowse_vrb);
@@ -52,13 +51,13 @@ namespace Games_Rental_System
             pnlNav.Left = btnBrowse.Left;
             btnBrowse.BackColor = Color.FromArgb(46, 51, 73);
 
-            lbltitle.Text = "Browse Games";
+            
             this.pnlFormLoader.Controls.Clear();
             frmBrowse frmBrowse_vrb = new frmBrowse() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmBrowse_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmBrowse_vrb);
             frmBrowse_vrb.Show();
-            inpSearch.Show();
+
 
         }
 
@@ -68,13 +67,11 @@ namespace Games_Rental_System
             pnlNav.Top = btnAddGame.Top;
             btnAddGame.BackColor = Color.FromArgb(46, 51, 73);
 
-            lbltitle.Text = "Add Game";
             this.pnlFormLoader.Controls.Clear();
             frmAddGame frmAddGame_vrb = new frmAddGame() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmAddGame_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmAddGame_vrb);
             frmAddGame_vrb.Show();
-            inpSearch.Hide();
         }
 
         private void btnUpdateGame_Click(object sender, EventArgs e)
@@ -88,8 +85,7 @@ namespace Games_Rental_System
             frmUpdateGame_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmUpdateGame_vrb);
             frmUpdateGame_vrb.Show();
-            inpSearch.Hide();
-            lbltitle.Text = "Update Game";
+            
         }
 
         private void btnAddClient_Click(object sender, EventArgs e)
@@ -103,8 +99,7 @@ namespace Games_Rental_System
             frmAddClient_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmAddClient_vrb);
             frmAddClient_vrb.Show();
-            inpSearch.Hide();
-            lbltitle.Text = "Add Client";
+            
         }
         private void btnUpdateClient_Click(object sender, EventArgs e)
         {
@@ -117,8 +112,6 @@ namespace Games_Rental_System
             frmUpdateclient_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(frmUpdateclient_vrb);
             frmUpdateclient_vrb.Show();
-            inpSearch.Hide();
-            lbltitle.Text = "Update Client Data";
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -155,9 +148,6 @@ namespace Games_Rental_System
             btnRegister.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void inpSearch_Click(object sender, EventArgs e)
-        {
-            inpSearch.SelectAll();
-        }
+        
     }
 }

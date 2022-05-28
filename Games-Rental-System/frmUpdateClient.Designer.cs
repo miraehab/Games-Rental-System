@@ -60,6 +60,7 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btnGetClient = new System.Windows.Forms.Button();
+            this.lbltitle = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -374,7 +375,7 @@
             this.pnlUpdate.Controls.Add(this.label5);
             this.pnlUpdate.Controls.Add(this.label4);
             this.pnlUpdate.Controls.Add(this.panel6);
-            this.pnlUpdate.Location = new System.Drawing.Point(68, 65);
+            this.pnlUpdate.Location = new System.Drawing.Point(68, 145);
             this.pnlUpdate.Name = "pnlUpdate";
             this.pnlUpdate.Size = new System.Drawing.Size(794, 442);
             this.pnlUpdate.TabIndex = 30;
@@ -385,7 +386,7 @@
             this.pnlGetClient.Controls.Add(this.panel13);
             this.pnlGetClient.Controls.Add(this.label7);
             this.pnlGetClient.Controls.Add(this.btnGetClient);
-            this.pnlGetClient.Location = new System.Drawing.Point(35, 12);
+            this.pnlGetClient.Location = new System.Drawing.Point(35, 92);
             this.pnlGetClient.Name = "pnlGetClient";
             this.pnlGetClient.Size = new System.Drawing.Size(854, 523);
             this.pnlGetClient.TabIndex = 31;
@@ -453,13 +454,26 @@
             this.btnGetClient.UseVisualStyleBackColor = true;
             this.btnGetClient.Click += new System.EventHandler(this.btnGetClient_Click);
             // 
+            // lbltitle
+            // 
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbltitle.Location = new System.Drawing.Point(13, 17);
+            this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(272, 32);
+            this.lbltitle.TabIndex = 32;
+            this.lbltitle.Text = "Update Client Data";
+            // 
             // frmUpdateClient
             // 
             this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(920, 556);
+            this.ClientSize = new System.Drawing.Size(920, 636);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.pnlGetClient);
             this.Controls.Add(this.pnlUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -486,6 +500,7 @@
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -522,5 +537,6 @@
         private Panel panel14;
         private Label label7;
         private Button btnGetClient;
+        private Label lbltitle;
     }
 }

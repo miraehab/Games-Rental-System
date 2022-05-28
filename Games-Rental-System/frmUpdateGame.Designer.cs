@@ -57,6 +57,7 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btnGetGame = new System.Windows.Forms.Button();
+            this.lbltitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -345,7 +346,7 @@
             this.pnlUpdate.Controls.Add(this.panel4);
             this.pnlUpdate.Controls.Add(this.panel6);
             this.pnlUpdate.Controls.Add(this.label2);
-            this.pnlUpdate.Location = new System.Drawing.Point(37, 0);
+            this.pnlUpdate.Location = new System.Drawing.Point(37, 80);
             this.pnlUpdate.Name = "pnlUpdate";
             this.pnlUpdate.Size = new System.Drawing.Size(743, 514);
             this.pnlUpdate.TabIndex = 35;
@@ -355,7 +356,7 @@
             this.pnlGetGame.Controls.Add(this.panel13);
             this.pnlGetGame.Controls.Add(this.label7);
             this.pnlGetGame.Controls.Add(this.btnGetGame);
-            this.pnlGetGame.Location = new System.Drawing.Point(12, 0);
+            this.pnlGetGame.Location = new System.Drawing.Point(12, 80);
             this.pnlGetGame.Name = "pnlGetGame";
             this.pnlGetGame.Size = new System.Drawing.Size(875, 540);
             this.pnlGetGame.TabIndex = 36;
@@ -422,12 +423,25 @@
             this.btnGetGame.UseVisualStyleBackColor = true;
             this.btnGetGame.Click += new System.EventHandler(this.btnGetGame_Click);
             // 
+            // lbltitle
+            // 
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbltitle.Location = new System.Drawing.Point(13, 17);
+            this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(201, 32);
+            this.lbltitle.TabIndex = 37;
+            this.lbltitle.Text = "Update Game";
+            // 
             // frmUpdateGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(920, 556);
+            this.ClientSize = new System.Drawing.Size(920, 636);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.pnlGetGame);
             this.Controls.Add(this.pnlUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -450,6 +464,7 @@
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -484,5 +499,6 @@
         private Panel panel14;
         private Label label7;
         private Button btnGetGame;
+        private Label lbltitle;
     }
 }
