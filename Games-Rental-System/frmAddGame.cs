@@ -77,7 +77,7 @@ namespace Games_Rental_System
                 pbPhoto.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                 byte[] pic = stream.ToArray();
                 string _Query = "SELECT * FROM GAME WHERE G_NAME=@gameName;";
-                string _Query2 = "insert into GAME (G_NAME,V_NAME,AMOUNT,PRICE,G_PHOTO,A_USERNAME,G_DATE,G_CATEGORY) VALUES (@gameName,@vendorName,@amount,@price, @pic,@user,@date,@category);";
+                string _Query2 = "insert into GAME (G_NAME,V_NAME,G_AMOUNT,G_PRICE,G_PHOTO,A_USERNAME,G_DATE,G_CATEGORY) VALUES (@gameName,@vendorName,@amount,@price, @pic,@user,@date,@category);";
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
                 command.Parameters.Add(new SqlParameter("@gameName", _gameName));

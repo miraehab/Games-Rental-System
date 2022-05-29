@@ -89,7 +89,7 @@
             this.Categories.Location = new System.Drawing.Point(145, 441);
             this.Categories.Name = "Categories";
             this.Categories.Size = new System.Drawing.Size(266, 23);
-            this.Categories.TabIndex = 34;
+            this.Categories.TabIndex = 31;
             // 
             // btnPhoto
             // 
@@ -291,7 +291,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(538, 442);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 58);
-            this.btnUpdate.TabIndex = 31;
+            this.btnUpdate.TabIndex = 34;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -441,8 +441,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(920, 636);
-            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.pnlGetGame);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.pnlUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

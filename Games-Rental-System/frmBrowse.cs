@@ -20,7 +20,7 @@ namespace Games_Rental_System
             try
             {
                 con.Open();
-                SqlCommand command = new SqlCommand("select * from GAME WHERE AMOUNT > 0;", con);
+                SqlCommand command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0;", con);
                 SqlDataReader data = command.ExecuteReader();
                 while (data.Read())
                 {
@@ -55,17 +55,17 @@ namespace Games_Rental_System
                 switch (cbSortby.SelectedIndex)
                 {
                     case 0:
-                        command = new SqlCommand("select DISTINCT year(G_DATE) as G_YEAR from GAME WHERE AMOUNT > 0 ;", con);
+                        command = new SqlCommand("select DISTINCT year(G_DATE) as G_YEAR from GAME WHERE G_AMOUNT > 0 ;", con);
                         _sort = "G_YEAR";
                         break;
 
                     case 1:
-                        command = new SqlCommand("select DISTINCT V_NAME from GAME WHERE AMOUNT > 0 ;", con);
+                        command = new SqlCommand("select DISTINCT V_NAME from GAME WHERE G_AMOUNT > 0 ;", con);
                         _sort = "V_NAME";
                         break;
 
                     case 2:
-                        command = new SqlCommand("select DISTINCT G_CATEGORY from GAME WHERE AMOUNT > 0 ;", con);
+                        command = new SqlCommand("select DISTINCT G_CATEGORY from GAME WHERE G_AMOUNT > 0 ;", con);
                         _sort = "G_CATEGORY";
                         break;
                 }
@@ -95,15 +95,15 @@ namespace Games_Rental_System
                 switch (cbSortby.SelectedIndex)
                 {
                     case 0:
-                        command = new SqlCommand("select * from GAME WHERE AMOUNT > 0 AND year(G_DATE) = @value;", con);
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND year(G_DATE) = @value;", con);
                         break;
 
                     case 1:
-                        command = new SqlCommand("select * from GAME WHERE AMOUNT > 0 AND V_NAME = @value;", con);
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND V_NAME = @value;", con);
                         break;
 
                     case 2:
-                        command = new SqlCommand("select * from GAME WHERE AMOUNT > 0 AND G_CATEGORY = @value;", con);
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND G_CATEGORY = @value;", con);
                         break;
                 }
                 command.Parameters.Add(new SqlParameter("@value", cbValue.Text.ToString()));
@@ -124,13 +124,31 @@ namespace Games_Rental_System
 
         private void inpSearch_TextChanged(object sender, EventArgs e)
         {
-            string _Search = inpSearch.Text.ToString()+ "%";
+            string _Search = inpSearch.Text.ToString() + "%";
             SqlConnection con = new SqlConnection(@"Data Source=MISHOO;Initial Catalog=Game-Over;Integrated Security=True");
             try
             {
                 con.Open();
-                SqlCommand command = new SqlCommand("select * from GAME WHERE AMOUNT > 0 AND G_NAME LIKE @value;", con);
-                command.Parameters.Add(new SqlParameter("@value", _Search));
+                SqlCommand command = new SqlCommand("");
+                switch (cbSortby.SelectedIndex)
+                {
+                    case 0:
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND year(G_DATE) = @value AND G_NAME LIKE @search;", con);
+                        break;
+
+                    case 1:
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND V_NAME = @value AND G_NAME LIKE @search;", con);
+                        break;
+
+                    case 2:
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND G_CATEGORY = @value AND G_NAME LIKE @search;", con);
+                        break;
+                    default:
+                        command = new SqlCommand("select * from GAME WHERE G_AMOUNT > 0 AND G_NAME LIKE @search;", con);
+                        break;
+                }
+                command.Parameters.Add(new SqlParameter("@value", cbValue.Text.ToString()));
+                command.Parameters.Add(new SqlParameter("@search", _Search));
                 SqlDataReader data = command.ExecuteReader();
                 flowLayoutPanel1.Controls.Clear();
                 while (data.Read())
@@ -144,6 +162,7 @@ namespace Games_Rental_System
             {
                 MessageBox.Show("error connecting to database");
             }
+            
         }
     }
 }

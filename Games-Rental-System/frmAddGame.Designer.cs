@@ -173,7 +173,7 @@
             this.btnAdd.Location = new System.Drawing.Point(575, 522);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(174, 58);
-            this.btnAdd.TabIndex = 17;
+            this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -322,7 +322,7 @@
             this.Categories.Location = new System.Drawing.Point(182, 521);
             this.Categories.Name = "Categories";
             this.Categories.Size = new System.Drawing.Size(266, 23);
-            this.Categories.TabIndex = 20;
+            this.Categories.TabIndex = 17;
             // 
             // lbltitle
             // 

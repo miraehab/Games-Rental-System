@@ -23,7 +23,7 @@ namespace Games_Rental_System{
                 string _password = inpPassword.Text.ToString();
                 string _confirmPassword = inpPasswordConfirm.Text.ToString();
                 string _Query = "SELECT A_USERNAME FROM ADMIN WHERE A_USERNAME=@username;";
-                string _Query2 = "insert into ADMIN VALUES (@username,@password);";
+                string _Query2 = "insert into ADMIN (A_USERNAME,A_PASSWORD) VALUES (@username,@password);";
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
                 command.Parameters.Add(new SqlParameter("@username", _userName));

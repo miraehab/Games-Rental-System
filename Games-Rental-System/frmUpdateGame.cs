@@ -79,8 +79,8 @@ namespace Games_Rental_System
                 {
                     inpGameName.Text = data["G_NAME"].ToString();
                     inpVendorName.Text = data["V_NAME"].ToString();
-                    inpGameAmount.Text = data["AMOUNT"].ToString();
-                    inpGamePrice.Text = data["PRICE"].ToString();
+                    inpGameAmount.Text = data["G_AMOUNT"].ToString();
+                    inpGamePrice.Text = data["G_PRICE"].ToString();
                     Categories.Text = data["G_CATEGORY"].ToString();
                     MemoryStream ms = new MemoryStream((byte[])data["G_PHOTO"]);
                     Image img = new Bitmap(ms);
@@ -115,7 +115,7 @@ namespace Games_Rental_System
                 MemoryStream stream = new MemoryStream();
                 pbPhoto.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                 byte[] pic = stream.ToArray();
-                string _Query = "UPDATE GAME SET G_NAME=@gameName, V_NAME=@vendorName, AMOUNT=@amount, PRICE=@price, G_PHOTO=@pic, G_CATEGORY=@category WHERE G_NAME=@gameOldname;";
+                string _Query = "UPDATE GAME SET G_NAME=@gameName, V_NAME=@vendorName, G_AMOUNT=@amount, G_PRICE=@price, G_PHOTO=@pic, G_CATEGORY=@category WHERE G_NAME=@gameOldname;";
                 SqlCommand command;
                 command = new SqlCommand(_Query, con);
                 command.Parameters.Add(new SqlParameter("@gameOldname", _gameOldName));

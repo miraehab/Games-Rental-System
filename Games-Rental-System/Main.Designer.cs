@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnUpdateClient = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnAddClient = new System.Windows.Forms.Button();
             this.btnUpdateGame = new System.Windows.Forms.Button();
             this.btnAddGame = new System.Windows.Forms.Button();
@@ -47,9 +48,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(17)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnUpdateClient);
-            this.panel1.Controls.Add(this.btnRegister);
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnAddClient);
             this.panel1.Controls.Add(this.btnUpdateGame);
             this.panel1.Controls.Add(this.btnAddGame);
@@ -61,6 +63,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 637);
             this.panel1.TabIndex = 0;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRegister.FlatAppearance.BorderSize = 0;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnRegister.Image = global::Games_Rental_System.Properties.Resources.settings;
+            this.btnRegister.Location = new System.Drawing.Point(0, 541);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(217, 48);
+            this.btnRegister.TabIndex = 4;
+            this.btnRegister.Text = "Register Admin";
+            this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnRegister.Leave += new System.EventHandler(this.btnRegister_Leave);
             // 
             // pnlNav
             // 
@@ -90,24 +111,23 @@
             this.btnUpdateClient.Click += new System.EventHandler(this.btnUpdateClient_Click);
             this.btnUpdateClient.Leave += new System.EventHandler(this.btnUpdateClient_Leave);
             // 
-            // btnRegister
+            // btnLogout
             // 
-            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnRegister.Image = global::Games_Rental_System.Properties.Resources.settings;
-            this.btnRegister.Location = new System.Drawing.Point(0, 589);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(217, 48);
-            this.btnRegister.TabIndex = 1;
-            this.btnRegister.Text = "Register Admin";
-            this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            this.btnRegister.Leave += new System.EventHandler(this.btnRegister_Leave);
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnLogout.Image = global::Games_Rental_System.Properties.Resources.settings;
+            this.btnLogout.Location = new System.Drawing.Point(0, 589);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(217, 48);
+            this.btnLogout.TabIndex = 1;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAddClient
             // 
@@ -248,6 +268,7 @@
         private System.Windows.Forms.Button btnAddGame;
         private System.Windows.Forms.Panel pnlFormLoader;
         private Button btnUpdateClient;
+        private Button btnLogout;
         private Button btnRegister;
     }
 }

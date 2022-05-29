@@ -148,6 +148,11 @@ namespace Games_Rental_System
             btnRegister.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login Login_vrb = new Login();
+            this.Hide();
+            Login_vrb.ShowDialog();
+        }
     }
 }
