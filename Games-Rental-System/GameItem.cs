@@ -123,7 +123,7 @@ namespace Games_Rental_System
                         command = new SqlCommand(_Query3, con);
                         command.Parameters.Add(new SqlParameter("@gamename", _gamename));
                         command.ExecuteNonQuery();
-                        MessageBox.Show("Game Returned successfully and you should pay " + _pay.ToString() + " for renting the game for " + totalDays.ToString() + " days");
+                        MessageBox.Show("Game Returned successfully and you should pay " + _pay.ToString() + "$ for renting the game for " + totalDays.ToString() + " days");
                         _amount++;
                         TAmount.Text = _amount.ToString()+" CDs";
 
