@@ -272,7 +272,7 @@
             // 
             // pbPhoto
             // 
-            this.pbPhoto.Image = global::Games_Rental_System.Properties.Resources.Logo1;
+            this.pbPhoto.Image = global::Games_Rental_System.Properties.Resources.Logo;
             this.pbPhoto.Location = new System.Drawing.Point(202, 87);
             this.pbPhoto.Name = "pbPhoto";
             this.pbPhoto.Size = new System.Drawing.Size(323, 149);

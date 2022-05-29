@@ -74,7 +74,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Games_Rental_System.Properties.Resources.Untitled_1;
+            this.pictureBox3.Image = global::Games_Rental_System.Properties.Resources.Field;
             this.pictureBox3.Location = new System.Drawing.Point(399, 241);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(305, 42);
@@ -115,7 +115,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Games_Rental_System.Properties.Resources.Untitled_1;
+            this.pictureBox2.Image = global::Games_Rental_System.Properties.Resources.Field;
             this.pictureBox2.Location = new System.Drawing.Point(399, 137);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(305, 42);
@@ -148,7 +148,7 @@
             // 
             // imgCover
             // 
-            this.imgCover.Image = global::Games_Rental_System.Properties.Resources.Untitled_3;
+            this.imgCover.Image = global::Games_Rental_System.Properties.Resources.Cover;
             this.imgCover.Location = new System.Drawing.Point(0, 0);
             this.imgCover.Name = "imgCover";
             this.imgCover.Size = new System.Drawing.Size(358, 561);
@@ -169,7 +169,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Games_Rental_System.Properties.Resources.Untitled_1;
+            this.pictureBox4.Image = global::Games_Rental_System.Properties.Resources.Field;
             this.pictureBox4.Location = new System.Drawing.Point(399, 340);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(305, 42);

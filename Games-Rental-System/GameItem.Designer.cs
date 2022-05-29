@@ -39,7 +39,7 @@
             // 
             // pbPhoto
             // 
-            this.pbPhoto.Image = global::Games_Rental_System.Properties.Resources._2b589b43ba83e08f8c8f43433a9a6471;
+            this.pbPhoto.Image = global::Games_Rental_System.Properties.Resources.God_Of_War;
             this.pbPhoto.Location = new System.Drawing.Point(0, 3);
             this.pbPhoto.Name = "pbPhoto";
             this.pbPhoto.Size = new System.Drawing.Size(289, 178);
