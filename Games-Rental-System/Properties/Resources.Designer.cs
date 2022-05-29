@@ -183,6 +183,26 @@ namespace Games_Rental_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap external_game_live_streaming_flaticons_flat_circular_flat_icons_2 {
+            get {
+                object obj = ResourceManager.GetObject("external-game-live-streaming-flaticons-flat-circular-flat-icons-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap external_game_live_streaming_flaticons_flat_circular_flat_icons_21 {
+            get {
+                object obj = ResourceManager.GetObject("external-game-live-streaming-flaticons-flat-circular-flat-icons-21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
@@ -306,6 +326,56 @@ namespace Games_Rental_System.Properties {
         internal static System.Drawing.Bitmap Untitled_3 {
             get {
                 object obj = ResourceManager.GetObject("Untitled-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_05_29_at_9_46_17_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-05-29 at 9.46.17 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_05_29_at_9_461 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-05-29 at 9.461", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_05_29_at_9_52_22_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-05-29 at 9.52.22 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_05_29_at_9_521 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-05-29 at 9.521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_05_29_at_9_54_12_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-05-29 at 9.54.12 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQueries = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnUpdateClient = new System.Windows.Forms.Button();
@@ -48,6 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(17)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.btnQueries);
             this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnUpdateClient);
@@ -64,6 +67,25 @@
             this.panel1.Size = new System.Drawing.Size(217, 637);
             this.panel1.TabIndex = 0;
             // 
+            // btnQueries
+            // 
+            this.btnQueries.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQueries.FlatAppearance.BorderSize = 0;
+            this.btnQueries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQueries.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQueries.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
+            this.btnQueries.Image = ((System.Drawing.Image)(resources.GetObject("btnQueries.Image")));
+            this.btnQueries.Location = new System.Drawing.Point(0, 425);
+            this.btnQueries.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnQueries.Name = "btnQueries";
+            this.btnQueries.Size = new System.Drawing.Size(217, 48);
+            this.btnQueries.TabIndex = 5;
+            this.btnQueries.Text = "Queries         ";
+            this.btnQueries.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnQueries.UseVisualStyleBackColor = true;
+            this.btnQueries.Click += new System.EventHandler(this.btnQueries_Click);
+            this.btnQueries.Leave += new System.EventHandler(this.btnQueries_Leave);
+            // 
             // btnRegister
             // 
             this.btnRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -71,7 +93,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnRegister.Image = global::Games_Rental_System.Properties.Resources.settings;
+            this.btnRegister.Image = ((System.Drawing.Image)(resources.GetObject("btnRegister.Image")));
             this.btnRegister.Location = new System.Drawing.Point(0, 541);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRegister.Name = "btnRegister";
@@ -99,7 +121,7 @@
             this.btnUpdateClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateClient.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnUpdateClient.Image = global::Games_Rental_System.Properties.Resources.Conact;
+            this.btnUpdateClient.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateClient.Image")));
             this.btnUpdateClient.Location = new System.Drawing.Point(0, 377);
             this.btnUpdateClient.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUpdateClient.Name = "btnUpdateClient";
@@ -118,13 +140,13 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnLogout.Image = global::Games_Rental_System.Properties.Resources.settings;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.Location = new System.Drawing.Point(0, 589);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(217, 48);
             this.btnLogout.TabIndex = 1;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "Logout             ";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -136,13 +158,13 @@
             this.btnAddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddClient.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnAddClient.Image = global::Games_Rental_System.Properties.Resources.Conact;
+            this.btnAddClient.Image = ((System.Drawing.Image)(resources.GetObject("btnAddClient.Image")));
             this.btnAddClient.Location = new System.Drawing.Point(0, 329);
             this.btnAddClient.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAddClient.Name = "btnAddClient";
             this.btnAddClient.Size = new System.Drawing.Size(217, 48);
             this.btnAddClient.TabIndex = 1;
-            this.btnAddClient.Text = "Add Client";
+            this.btnAddClient.Text = "Add Client     ";
             this.btnAddClient.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAddClient.UseVisualStyleBackColor = true;
             this.btnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
@@ -155,13 +177,13 @@
             this.btnUpdateGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateGame.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnUpdateGame.Image = global::Games_Rental_System.Properties.Resources.calendar;
+            this.btnUpdateGame.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateGame.Image")));
             this.btnUpdateGame.Location = new System.Drawing.Point(0, 281);
             this.btnUpdateGame.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUpdateGame.Name = "btnUpdateGame";
             this.btnUpdateGame.Size = new System.Drawing.Size(217, 48);
             this.btnUpdateGame.TabIndex = 1;
-            this.btnUpdateGame.Text = "Update Game";
+            this.btnUpdateGame.Text = "Update Game  ";
             this.btnUpdateGame.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnUpdateGame.UseVisualStyleBackColor = true;
             this.btnUpdateGame.Click += new System.EventHandler(this.btnUpdateGame_Click);
@@ -174,13 +196,13 @@
             this.btnAddGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddGame.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnAddGame.Image = global::Games_Rental_System.Properties.Resources.diagram;
+            this.btnAddGame.Image = ((System.Drawing.Image)(resources.GetObject("btnAddGame.Image")));
             this.btnAddGame.Location = new System.Drawing.Point(0, 233);
             this.btnAddGame.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAddGame.Name = "btnAddGame";
             this.btnAddGame.Size = new System.Drawing.Size(217, 48);
             this.btnAddGame.TabIndex = 1;
-            this.btnAddGame.Text = "Add Game";
+            this.btnAddGame.Text = "Add Game     ";
             this.btnAddGame.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAddGame.UseVisualStyleBackColor = true;
             this.btnAddGame.Click += new System.EventHandler(this.btnAddGame_Click);
@@ -193,7 +215,7 @@
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(217)))), ((int)(((byte)(205)))));
-            this.btnBrowse.Image = global::Games_Rental_System.Properties.Resources.home;
+            this.btnBrowse.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowse.Image")));
             this.btnBrowse.Location = new System.Drawing.Point(0, 185);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBrowse.Name = "btnBrowse";
@@ -270,6 +292,7 @@
         private Button btnUpdateClient;
         private Button btnLogout;
         private Button btnRegister;
+        private Button btnQueries;
     }
 }
 

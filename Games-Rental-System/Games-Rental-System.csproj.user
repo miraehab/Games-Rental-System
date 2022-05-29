@@ -5,6 +5,9 @@
     <Compile Update="frmBrowse.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmQueries.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GameItem.cs">
       <SubType>UserControl</SubType>
     </Compile>

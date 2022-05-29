@@ -33,6 +33,7 @@ namespace Games_Rental_System
                 btnAddClient.Visible = true;
                 btnUpdateClient.Visible = true;
                 btnRegister.Visible = true;
+                btnQueries.Visible = true;
             }
             else
             {
@@ -41,6 +42,7 @@ namespace Games_Rental_System
                 btnAddClient.Visible = false;
                 btnUpdateClient.Visible = false;
                 btnRegister.Visible = false;
+                btnQueries.Visible=false;
             }
         }
 
@@ -114,6 +116,26 @@ namespace Games_Rental_System
             frmUpdateclient_vrb.Show();
         }
 
+        private void btnQueries_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = btnQueries.Height;
+            pnlNav.Top = btnQueries.Top;
+            btnQueries.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.pnlFormLoader.Controls.Clear();
+            frmQueries frmQueries_vrb = new frmQueries() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmQueries_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmQueries_vrb);
+            frmQueries_vrb.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login Login_vrb = new Login();
+            this.Hide();
+            Login_vrb.ShowDialog();
+        }
+
         private void btnRegister_Click(object sender, EventArgs e)
         {        
             new Register().Show();
@@ -148,11 +170,9 @@ namespace Games_Rental_System
             btnRegister.BackColor = Color.FromArgb(24, 17, 68);
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnQueries_Leave(object sender, EventArgs e)
         {
-            Login Login_vrb = new Login();
-            this.Hide();
-            Login_vrb.ShowDialog();
+            btnQueries.BackColor = Color.FromArgb(24, 17, 68);
         }
     }
 }

@@ -79,9 +79,8 @@ namespace Games_Rental_System
                 }
                 con.Close();
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show(ex.ToString());
                 MessageBox.Show("error connecting to database");
             }
         }
@@ -135,9 +134,8 @@ namespace Games_Rental_System
                 }
                 con.Close();
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show(ex.ToString());
                 MessageBox.Show("error connecting to database");
             }
         }
