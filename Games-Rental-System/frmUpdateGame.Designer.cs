@@ -85,7 +85,8 @@
             "Puzzlers and party games",
             "Action-adventure",
             "Survival and horror",
-            "Platformer"});
+            "Platformer",
+            "Funny"});
             this.Categories.Location = new System.Drawing.Point(145, 441);
             this.Categories.Name = "Categories";
             this.Categories.Size = new System.Drawing.Size(266, 23);

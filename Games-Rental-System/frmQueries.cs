@@ -20,7 +20,7 @@ namespace Games_Rental_System
 
         private void cbQueries_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=MISHOO; Initial Catalog=Game-Over;Integrated Security=True");
+            SqlConnection con = new SqlConnection(sqlCon.sqlcon);
             try
             {
                 con.Open();

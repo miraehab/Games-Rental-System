@@ -17,7 +17,7 @@ namespace Games_Rental_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=MISHOO;Initial Catalog=Game-Over;Integrated Security=True");
+            SqlConnection con = new SqlConnection(sqlCon.sqlcon);
             try
             {
                 con.Open();
@@ -55,7 +55,7 @@ namespace Games_Rental_System
 
         private void btnLoginAdmin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=MISHOO;Initial Catalog=Game-Over;Integrated Security=True");
+            SqlConnection con = new SqlConnection(sqlCon.sqlcon);
             try
             {
                 con.Open();
