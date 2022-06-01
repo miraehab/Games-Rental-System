@@ -25,3 +25,9 @@ We converted the ERD to physical model (DDL scripts)
 <h3>Third: </h3>
 
 We developped the software application using C# and connected the database to be able to perform all the application functions like: sign-in, add game, update game and browse all games that are stored in our database.
+
+<h2>Some screenshots: </h2>
+
+![image](https://user-images.githubusercontent.com/74511706/171415872-a2b74534-5004-4688-b0c2-d48454ad5592.png)
+
+![image](https://user-images.githubusercontent.com/74511706/171417032-246fc9f6-99e6-479c-b97c-bcd990ee02cd.png)
