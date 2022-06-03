@@ -1,9 +1,3 @@
-/*==============================================================*/
-/* DBMS name:      Microsoft SQL Server 2017                    */
-/* Created on:     5/29/2022 8:48:35 PM                         */
-/*==============================================================*/
-
-
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
    where r.fkeyid = object_id('GAME') and o.name = 'FK_GAME_MANAGE_ADMIN')
