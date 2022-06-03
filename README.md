@@ -32,6 +32,8 @@ We developped the software application using C# and connected the database to be
 
 ![image](https://user-images.githubusercontent.com/74511706/171738644-feae84d6-3865-4bb8-aefd-1f76dc03dd56.png)
 
+![image](https://user-images.githubusercontent.com/25803558/171775152-9eaf75cd-def4-455d-b0b7-9c4ab0e8c2ae.png)
+
 ![image](https://user-images.githubusercontent.com/74511706/171738818-2da87538-889b-42d0-b83f-55c12821235b.png)
 
 ![image](https://user-images.githubusercontent.com/74511706/171738991-5e2173e6-7eee-4eb8-8308-e9305af7cf45.png)
