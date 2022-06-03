@@ -18,11 +18,11 @@ The admin of the system is responsible for adding the games to be rented out by 
 <h2>Project Steps</h2>
 <h3>First: </h3>
 We draw the ERD for this project using <b>PowerDesigner</b></br>
-Here is the link of the --> <a href="https://github.com/Michael-M-aher/Games-Rental-System/ERD">ERD</a></br>
+Here is the link of the --> <a href="https://github.com/Michael-M-aher/Games-Rental-System/tree/main/ERD">ERD</a></br>
 
 <h3>Second: </h3>
 We converted the ERD to physical model (DDL scripts)</br>
-Here is the link of the --> <a href="https://github.com/Michael-M-aher/Games-Rental-System/Database Script/Game-Over.sql">SQL Script</a></br>
+Here is the link of the --> <a href="https://github.com/Michael-M-aher/Games-Rental-System/blob/main/Database%20Script/Game-Over.sql">SQL Script</a></br>
 
 <h3>Third: </h3>
 
