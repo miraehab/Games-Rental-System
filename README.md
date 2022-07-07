@@ -1,5 +1,5 @@
 # Games Rental System
-This is a our project for the Introduction to Database Systems course taken during fall 2022 semester.</br>
+This is our project for the Introduction to Database Systems course taken during fall 2022 semester.</br>
 A Game rental Software Application using <b>C# programming language</b>
 
 <h2>Description: </h2>
